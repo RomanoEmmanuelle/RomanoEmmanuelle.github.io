@@ -7,58 +7,44 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Chiba University**, B.Sc. candidate in Mathematics and Informatics, April 2023–March 2027
+  * Graduation seminar in commutative algebra
+  * Advisor: Professor Kenta Sato
+* **Osaka University**, Language and Science Preparation Program, March 2022–March 2023
+* **Bandung Institute of Technology**, Faculty of Mathematics and Natural Sciences, August 2021–January 2022
+* **SMAK 2 BPK Penabur Bandung**, Natural Sciences, July 2018–June 2021
 
-Work experience
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Graduation Seminar: Commutative Algebra**, Chiba University, April 2026–March 2027
+  * Reading Atiyah and MacDonald's *Introduction to Commutative Algebra* under Professor Kenta Sato
+* **Polymath Jr 2026**, June–August 2026
+  * Collaborative undergraduate research on binomial edge ideals under Professor Alexandra Seceleanu
+* **Buka Meja Season 6 Reading Group**, January–March 2026
+  * Studied Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+* **Scholarship preparation instructor for Indonesian students**, April 2023–May 2025
+* **University entrance examination tutor for Indonesian students**, June 2020–May 2022
+* **PPI Pelangi Kasih volunteer supporting Indonesian students**, September 2020–December 2021
+
+Honors and awards
 ======
-* Currently signed in to 43 different slack teams
+* **MEXT Scholarship Program**, Japanese Ministry of Education, Culture, Sports, Science and Technology, December 2021
+  * Selected as one of six awardees from thousands of applicants
+* **Dean's List**, Bandung Institute of Technology, first semester of 2021–2022
+
+Contact
+======
+* Email: [emmnll.r@gmail.com](mailto:emmnll.r@gmail.com)
+* GitHub: [RomanoEmmanuelle](https://github.com/RomanoEmmanuelle)
+* LinkedIn: [romano-emmanuelle](https://www.linkedin.com/in/romano-emmanuelle/)
