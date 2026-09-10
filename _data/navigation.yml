@@ -11,14 +11,8 @@ main:
   - title: "About"
     url: /
 
-  - title: "Research"
-    url: /research/
+  - title: "Academic"
+    url: /academic/
 
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Teaching"
-    url: /teaching/
-    
-  - title: "CV"
-    url: /cv/
+  - title: "Notes"
+    url: /notes/
