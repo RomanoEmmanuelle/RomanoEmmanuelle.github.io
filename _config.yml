@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Romano Emmanuelle"
 title_separator          : "-"
 name                     : &name "Romano Emmanuelle"
-description              : &description "Personal website and portfolio of Romano Emmanuelle"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Mathematics student at Chiba University working in commutative algebra"
 url                      : "https://romanoemmanuelle.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,14 +23,14 @@ repository               : "RomanoEmmanuelle/RomanoEmmanuelle.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.webp"
   name             : "Romano Emmanuelle"
   pronouns         : # example: "she/her"  
-  bio              : "Personal website and portfolio"
-  location         : "Indonesia"
-  employer         :
+  bio              : "Mathematics student at Chiba University"
+  location         : "Chiba, Japan"
+  employer         : "Chiba University"
   uri              : # URL
-  email            : 
+  email            : "emmnll.r@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "romano-emmanuelle"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -84,12 +84,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+    title: 'Preprints'
+  books:
+    title: 'Book Chapters'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -192,6 +190,36 @@ exclude:
   - README
   - tmp
   - vendor
+  # Original template demo content (kept out of the published site)
+  - _data/authors.yml
+  - _data/cv.json
+  - _pages/archive-layout-with-content.md
+  - _pages/cv-json.md
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/portfolio.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - _portfolio/portfolio-1.md
+  - _portfolio/portfolio-2.html
+  - _posts/2012-08-14-blog-post-1.md
+  - _posts/2013-08-14-blog-post-2.md
+  - _posts/2014-08-14-blog-post-3.md
+  - _posts/2015-08-14-blog-post-4.md
+  - _posts/2199-01-01-future-post.md
+  - _publications/2009-10-01-paper-title-number-1.md
+  - _publications/2010-10-01-paper-title-number-2.md
+  - _publications/2015-10-01-paper-title-number-3.md
+  - _publications/2024-02-17-paper-title-number-4.md
+  - _publications/2025-06-08-paper-title-number-5.md
+  - _talks/2012-03-01-talk-1.md
+  - _talks/2013-03-01-tutorial-1.md
+  - _talks/2014-02-01-talk-2.md
+  - _talks/2014-03-01-talk-3.md
+  - _teaching/2014-spring-teaching-1.md
+  - _teaching/2015-spring-teaching-2.md
 keep_files:
   - .git
   - .svn
