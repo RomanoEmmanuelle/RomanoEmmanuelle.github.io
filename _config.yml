@@ -9,6 +9,7 @@
 # Basic Site Settings
 locale                   : "id-ID"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+default_theme            : "dark" # First-visit appearance; visitors can still switch themes
 title                    : "Romano Emmanuelle"
 title_separator          : "-"
 name                     : &name "Romano Emmanuelle"
