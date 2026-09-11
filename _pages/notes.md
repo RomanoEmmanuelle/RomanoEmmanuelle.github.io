@@ -7,14 +7,14 @@ author_profile: true
 
 ## Mathematics notes
 
-### Undergraduate Seminar in Commutative Algebra
+<article class="content-entry">
+  <h3 class="content-entry__title">Undergraduate Seminar in Commutative Algebra</h3>
+  <p class="content-entry__description">Notes from my graduation seminar based on Atiyah and MacDonald's <em>Introduction to Commutative Algebra</em>.</p>
+  <p class="content-entry__action"><a href="https://tinyurl.com/Undergraduateseminar">Read the seminar notes</a></p>
+</article>
 
-Notes from my graduation seminar based on Atiyah and MacDonald's *Introduction to Commutative Algebra*.
-
-[Read the seminar notes](https://tinyurl.com/Undergraduateseminar)
-
-### Buka Meja Season 6
-
-Presentation slides on Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions.
-
-[View the presentation slides](https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing)
+<article class="content-entry">
+  <h3 class="content-entry__title">Buka Meja Season 6</h3>
+  <p class="content-entry__description">Presentation slides on Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions.</p>
+  <p class="content-entry__action"><a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">View the presentation slides</a></p>
+</article>

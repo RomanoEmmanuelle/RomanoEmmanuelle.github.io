@@ -7,65 +7,6 @@ author_profile: true
 
 ## Education
 
-<style>
-  .education-list {
-    margin: 0 0 2.5rem;
-  }
-
-  .education-entry {
-    display: grid;
-    grid-template-columns: 10rem minmax(0, 1fr);
-    gap: 2rem;
-    padding: 1.5rem 0;
-    border-top: 1px solid var(--global-border-color);
-  }
-
-  .education-entry:first-child {
-    padding-top: 0.5rem;
-    border-top: 0;
-  }
-
-  .education-date {
-    color: var(--global-text-color-light);
-    font-weight: 700;
-    white-space: nowrap;
-  }
-
-  .education-school {
-    margin: 0 0 0.4rem;
-    font-size: 1.2rem;
-  }
-
-  .education-program,
-  .education-note {
-    margin: 0.25rem 0 0;
-  }
-
-  .education-note {
-    color: var(--global-text-color-light);
-    font-size: 0.9rem;
-  }
-
-  .external-arrow {
-    display: inline-block;
-    margin-left: 0.15em;
-    font-size: 0.8em;
-    text-decoration: none;
-  }
-
-  @media (max-width: 640px) {
-    .education-entry {
-      grid-template-columns: 1fr;
-      gap: 0.55rem;
-      padding: 1.25rem 0;
-    }
-
-    .education-date {
-      white-space: normal;
-    }
-  }
-</style>
-
 <div class="education-list">
   <article class="education-entry">
     <time class="education-date">Apr 2023 – Mar 2027</time>
@@ -104,44 +45,52 @@ author_profile: true
 
 ## Activities
 
-### Graduation Seminar: Commutative Algebra
+<article class="content-entry">
+  <h3 class="content-entry__title">Graduation Seminar: Commutative Algebra</h3>
+  <p class="content-entry__meta">Chiba University · April 2026–March 2027</p>
+  <p class="content-entry__description">Reading Atiyah and MacDonald's <em>Introduction to Commutative Algebra</em> under Professor Kenta Sato. <a href="https://tinyurl.com/Undergraduateseminar">Seminar notes</a></p>
+</article>
 
-**Chiba University · April 2026–March 2027**
+<article class="content-entry">
+  <h3 class="content-entry__title">Polymath Jr 2026</h3>
+  <p class="content-entry__meta">June–August 2026</p>
+  <p class="content-entry__description">Collaborative undergraduate research on binomial edge ideals under <a href="https://aseceleanu.github.io/">Professor Alexandra Seceleanu</a>.</p>
+</article>
 
-Reading Atiyah and MacDonald's *Introduction to Commutative Algebra* under Professor Kenta Sato. [Seminar notes](https://tinyurl.com/Undergraduateseminar)
-
-### Polymath Jr 2026
-
-**June–August 2026**
-
-Collaborative undergraduate research on binomial edge ideals under [Professor Alexandra Seceleanu](https://aseceleanu.github.io/).
-
-### Buka Meja Season 6 Reading Group
-
-**January–March 2026**
-
-Studied Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions. [Presentation slides](https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing)
+<article class="content-entry">
+  <h3 class="content-entry__title">Buka Meja Season 6 Reading Group</h3>
+  <p class="content-entry__meta">January–March 2026</p>
+  <p class="content-entry__description">Studied Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions. <a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">Presentation slides</a></p>
+</article>
 
 ## Publications
 
-### Functional Dirichlet Series, Integral Representations of a Generalized Zeta Function, and Applications to Sustainability
+<article class="content-entry">
+  <h3 class="content-entry__title">Functional Dirichlet Series, Integral Representations of a Generalized Zeta Function, and Applications to Sustainability</h3>
+  <p class="content-entry__description">Natanael Karjanto, Romano Emmanuelle, and Bharath Sriraman (2026). <em>Handbook of Visual, Experimental and Computational Mathematics</em>, Springer Nature Switzerland.</p>
+  <p class="content-entry__action"><a href="https://doi.org/10.1007/978-3-032-16368-4_91">Official DOI</a> · <a href="/files/functional-dirichlet-series-2026.pdf">Read PDF</a></p>
+</article>
 
-Natanael Karjanto, Romano Emmanuelle, and Bharath Sriraman (2026). *Handbook of Visual, Experimental and Computational Mathematics*, Springer Nature Switzerland. [Official DOI](https://doi.org/10.1007/978-3-032-16368-4_91) · [Read PDF](/files/functional-dirichlet-series-2026.pdf)
-
-### Identifying a Pair of Skew Lines Using Scalar Triple Product: A Short Review
-
-Yongsik Jang, Romano Emmanuelle, and Natanael Karjanto (2025). Preprint. [HAL record](https://hal.science/hal-05053624/) · [Read preprint](https://hal.science/hal-05053624/file/250330-arXiv-document.pdf)
+<article class="content-entry">
+  <h3 class="content-entry__title">Identifying a Pair of Skew Lines Using Scalar Triple Product: A Short Review</h3>
+  <p class="content-entry__description">Yongsik Jang, Romano Emmanuelle, and Natanael Karjanto (2025). Preprint.</p>
+  <p class="content-entry__action"><a href="https://hal.science/hal-05053624/">HAL record</a> · <a href="https://hal.science/hal-05053624/file/250330-arXiv-document.pdf">Read preprint</a></p>
+</article>
 
 ## Teaching
 
-- **Scholarship preparation instructor**, April 2023–May 2025
-- **University entrance examination tutor**, June 2020–May 2022
-- **PPI Pelangi Kasih volunteer**, September 2020–December 2021
+<ul class="hierarchy-list">
+  <li><strong>Scholarship preparation instructor</strong>, April 2023–May 2025</li>
+  <li><strong>University entrance examination tutor</strong>, June 2020–May 2022</li>
+  <li><strong>PPI Pelangi Kasih volunteer</strong>, September 2020–December 2021</li>
+</ul>
 
 ## Honors and awards
 
-- **MEXT Scholarship Program**, December 2021 — selected as one of six awardees from thousands of applicants
-- **Dean's List**, Bandung Institute of Technology, first semester of 2021–2022
+<ul class="hierarchy-list">
+  <li><strong>MEXT Scholarship Program</strong>, December 2021 — selected as one of six awardees from thousands of applicants</li>
+  <li><strong>Dean's List</strong>, Bandung Institute of Technology, first semester of 2021–2022</li>
+</ul>
 
 ## Beyond mathematics
 
