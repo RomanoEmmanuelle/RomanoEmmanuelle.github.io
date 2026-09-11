@@ -7,17 +7,100 @@ author_profile: true
 
 ## Education
 
-**Chiba University** — B.Sc. candidate, Mathematics and Informatics<br>
-April 2023–March 2027 · Advisor: [Professor Kenta Sato](https://sites.google.com/view/ktsato)
+<style>
+  .education-list {
+    margin: 0 0 2.5rem;
+  }
 
-**Osaka University** — Language and Science Preparation Program<br>
-March 2022–March 2023
+  .education-entry {
+    display: grid;
+    grid-template-columns: 10rem minmax(0, 1fr);
+    gap: 2rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--global-border-color);
+  }
 
-**Bandung Institute of Technology** — Undergraduate studies, Faculty of Mathematics and Natural Sciences<br>
-August 2021–January 2022
+  .education-entry:first-child {
+    padding-top: 0.5rem;
+    border-top: 0;
+  }
 
-**SMAK 2 BPK Penabur Bandung** — Natural Sciences<br>
-July 2018–June 2021
+  .education-date {
+    color: var(--global-text-color-light);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .education-school {
+    margin: 0 0 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  .education-program,
+  .education-note {
+    margin: 0.25rem 0 0;
+  }
+
+  .education-note {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
+
+  .external-arrow {
+    display: inline-block;
+    margin-left: 0.15em;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    .education-entry {
+      grid-template-columns: 1fr;
+      gap: 0.55rem;
+      padding: 1.25rem 0;
+    }
+
+    .education-date {
+      white-space: normal;
+    }
+  }
+</style>
+
+<div class="education-list">
+  <article class="education-entry">
+    <time class="education-date">Apr 2023 – Mar 2027</time>
+    <div>
+      <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">Chiba University</a><span class="external-arrow" aria-hidden="true">↗</span></h3>
+      <p class="education-program">Undergraduate — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a><span class="external-arrow" aria-hidden="true">↗</span></p>
+      <p class="education-note">Advisor: <a href="https://sites.google.com/view/ktsato">Kenta Sato</a><span class="external-arrow" aria-hidden="true">↗</span></p>
+    </div>
+  </article>
+
+  <article class="education-entry">
+    <time class="education-date">Mar 2022 – Mar 2023</time>
+    <div>
+      <h3 class="education-school"><a href="https://www.osaka-u.ac.jp/en">Osaka University</a><span class="external-arrow" aria-hidden="true">↗</span></h3>
+      <p class="education-program">One-Year Language and Science Preparation Program</p>
+    </div>
+  </article>
+
+  <article class="education-entry">
+    <time class="education-date">Aug 2021 – Jan 2022</time>
+    <div>
+      <h3 class="education-school"><a href="https://itb.ac.id/">Bandung Institute of Technology</a><span class="external-arrow" aria-hidden="true">↗</span></h3>
+      <p class="education-program">Undergraduate — Faculty of Mathematics and Natural Sciences</p>
+      <p class="education-note">Opted out to continue studying in Japan</p>
+    </div>
+  </article>
+
+  <article class="education-entry">
+    <time class="education-date">Jul 2018 – Jun 2021</time>
+    <div>
+      <h3 class="education-school">SMAK 2 BPK Penabur Bandung</h3>
+      <p class="education-program">High School Diploma — Natural Sciences</p>
+    </div>
+  </article>
+</div>
 
 ## Activities
 
