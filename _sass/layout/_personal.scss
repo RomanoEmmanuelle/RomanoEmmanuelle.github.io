@@ -194,3 +194,110 @@
     font-size: 1.12rem;
   }
 }
+
+/* Landing page */
+.landing-hero {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.9fr) minmax(22rem, 1.1fr);
+  align-items: center;
+  gap: clamp(3rem, 7vw, 7rem);
+  min-height: calc(100vh - #{$masthead-height} - 9rem);
+  padding: clamp(2rem, 6vh, 5rem) 0;
+}
+
+.landing-hero__portrait {
+  position: relative;
+  isolation: isolate;
+}
+
+.landing-hero__portrait::after {
+  position: absolute;
+  inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  z-index: -1;
+  content: "";
+  background: var(--global-border-color);
+  border-radius: 1.25rem;
+}
+
+.landing-hero__portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 28%;
+  border-radius: 1.25rem;
+}
+
+.landing-hero__name {
+  margin: 0;
+  font-size: clamp(3.4rem, 7.2vw, 7rem);
+  font-weight: 780;
+  letter-spacing: -0.065em;
+  line-height: 0.86;
+}
+
+.landing-hero__name span {
+  display: block;
+}
+
+.landing-hero__name-accent {
+  color: var(--global-link-color);
+}
+
+.landing-hero__role {
+  margin: clamp(2rem, 5vh, 3.5rem) 0 0.85rem;
+  color: var(--global-text-color-light);
+  font-size: clamp(1.1rem, 2.2vw, 1.55rem);
+  line-height: 1.4;
+}
+
+.landing-hero__affiliation {
+  margin: 0;
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  line-height: 1.75;
+}
+
+.landing-hero__affiliation a {
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+@media (max-width: 800px) {
+  .landing-hero {
+    grid-template-columns: 1fr;
+    gap: 2.75rem;
+    min-height: auto;
+    padding: 2rem 0 3.5rem;
+  }
+
+  .landing-hero__portrait {
+    width: min(88%, 28rem);
+    margin: 0 auto;
+  }
+
+  .landing-hero__intro {
+    text-align: center;
+  }
+
+  .landing-hero__name {
+    font-size: clamp(3.1rem, 15vw, 5rem);
+  }
+
+  .landing-hero__role {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .landing-hero__portrait::after {
+    inset: 0.8rem -0.8rem -0.8rem 0.8rem;
+  }
+
+  .landing-hero__portrait img {
+    border-radius: 1rem;
+  }
+
+  .landing-hero__name {
+    font-size: clamp(2.8rem, 14vw, 3.75rem);
+  }
+}
