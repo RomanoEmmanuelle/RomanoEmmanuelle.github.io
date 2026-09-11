@@ -52,6 +52,12 @@ author_profile: true
 </article>
 
 <article class="content-entry">
+  <h3 class="content-entry__title">Polymath Jr 2026</h3>
+  <p class="content-entry__meta">June–August 2026</p>
+  <p class="content-entry__description">Collaborative undergraduate research on binomial edge ideals under <a href="https://aseceleanu.github.io/">Professor Alexandra Seceleanu</a>.</p>
+</article>
+
+<article class="content-entry">
   <h3 class="content-entry__title">Buka Meja Season 6 Reading Group</h3>
   <p class="content-entry__meta">January–March 2026</p>
   <p class="content-entry__description">Studied Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions. <a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">Presentation slides</a></p>
@@ -85,9 +91,3 @@ author_profile: true
   <li><strong>MEXT Scholarship Program</strong>, December 2021 — selected as one of six awardees from thousands of applicants</li>
   <li><strong>Dean's List</strong>, Bandung Institute of Technology, first semester of 2021–2022</li>
 </ul>
-
-## Miscellaneous 
-
-I was obese in 2023, and going to the gym was how I lost weight. However, in October 2025, I was hit by a taxi. After that, the gym was no longer an option for me, so I had to find a way to maintain my weight without relying on my arms; and that was how I started running!
-
-For inquiries, contact me at [emmnll.r@gmail.com](mailto:emmnll.r@gmail.com).
