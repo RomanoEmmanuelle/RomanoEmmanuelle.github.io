@@ -420,6 +420,254 @@
   line-height: 1.35;
 }
 
+/* Long-form examination notes */
+.exam-lead {
+  max-width: 52rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.exam-disclaimer {
+  max-width: 52rem;
+  margin: 0 0 2.5rem;
+  padding: 1rem 1.15rem;
+  background: var(--global-code-background-color);
+  border-left: 0.3rem solid var(--global-link-color);
+  border-radius: 0 0.55rem 0.55rem 0;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.exam-overview,
+.exam-instructions {
+  max-width: 52rem;
+  margin: 2.5rem 0;
+}
+
+.exam-overview h2,
+.exam-instructions h2 {
+  margin: 0 0 1rem;
+  font-size: 1.35rem;
+  font-weight: 720;
+  letter-spacing: -0.015em;
+}
+
+.exam-overview dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.exam-overview dl div {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.exam-overview dl div:nth-child(odd) {
+  padding-right: 1.25rem;
+}
+
+.exam-overview dt {
+  color: var(--global-text-color-light);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.exam-overview dd {
+  margin: 0.25rem 0 0;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.exam-instructions ol,
+.exam-problem ol,
+.exam-problem ul {
+  padding-left: 1.45rem;
+}
+
+.exam-instructions li,
+.exam-problem li {
+  margin-bottom: 0.7rem;
+  padding-left: 0.25rem;
+}
+
+.exam-index {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  max-width: 52rem;
+  margin: 2.75rem 0 1.25rem;
+  padding: 0.85rem 0;
+  border-block: 1px solid var(--global-border-color);
+}
+
+.exam-index span {
+  margin-right: 0.2rem;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.exam-index a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.exam-index a:hover,
+.exam-index a:focus-visible {
+  color: var(--global-bg-color);
+  background: var(--global-link-color);
+  border-color: var(--global-link-color);
+}
+
+.exam-problem {
+  max-width: 56rem;
+  padding: 2.5rem 0;
+  scroll-margin-top: 6rem;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.exam-problem__header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1.35rem;
+}
+
+.exam-problem__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3.15rem;
+  min-height: 2.35rem;
+  padding: 0.35rem 0.7rem;
+  color: var(--global-bg-color);
+  background: var(--global-link-color);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 760;
+  letter-spacing: 0.02em;
+}
+
+.exam-problem__anchor {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.exam-problem__question,
+.exam-solution__body {
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.exam-problem__question > p,
+.exam-solution__body > p {
+  margin: 0 0 1rem;
+}
+
+.exam-math--display {
+  max-width: 100%;
+  margin: 1.1rem 0;
+  padding: 0.25rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.exam-code,
+.exam-algorithm {
+  max-width: 100%;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  overflow-x: auto;
+  background: var(--global-code-background-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.65rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.exam-code code {
+  padding: 0;
+  white-space: pre;
+  background: transparent;
+}
+
+.exam-algorithm {
+  font-family: var(--global-font-family);
+}
+
+.exam-solution {
+  margin-top: 1.5rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.exam-solution summary {
+  padding: 0.95rem 1.1rem;
+  color: var(--global-link-color);
+  background: var(--global-code-background-color);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+  list-style-position: inside;
+}
+
+.exam-solution summary:hover,
+.exam-solution summary:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.exam-solution__body {
+  padding: 1.25rem;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.exam-solution__body > :first-child {
+  margin-top: 0;
+}
+
+.exam-solution__body > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .exam-overview dl {
+    grid-template-columns: 1fr;
+  }
+
+  .exam-overview dl div:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  .exam-problem {
+    padding: 2rem 0;
+  }
+
+  .exam-solution__body {
+    padding: 1rem;
+  }
+}
+
 @media (max-width: 720px) {
   .misc-intro {
     grid-template-columns: 1fr;
