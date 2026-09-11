@@ -7,9 +7,9 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "id-ID"
-site_theme               : "mint" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-default_theme            : "air" # First-visit appearance; visitors can still switch themes
+locale                   : "jp-JP"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+default_theme            : "dark" # First-visit appearance; visitors can still switch themes
 title                    : "Romano Emmanuelle"
 title_separator          : "-"
 name                     : &name "Romano Emmanuelle"
@@ -27,7 +27,7 @@ author:
   avatar           : "profile.webp"
   name             : "Romano Emmanuelle"
   pronouns         : # example: "she/her"  
-  bio              : "Mathematics student at Chiba University"
+  bio              : "Undergraduate student at Chiba University"
   location         : "Chiba, Japan"
   employer         : "Chiba University"
   uri              : # URL
@@ -52,7 +52,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "RomanoEmmanuelle"
+  github           : # Username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -65,7 +65,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "romano.emmanuelle"
   lastfm           : # Username
   linkedin         : "romano-emmanuelle"
   mastodon         : # URL
