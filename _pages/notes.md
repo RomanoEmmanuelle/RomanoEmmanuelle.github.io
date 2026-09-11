@@ -8,6 +8,12 @@ author_profile: true
 ## Mathematics notes
 
 <article class="content-entry">
+  <h3 class="content-entry__title">Chiba University 2027 Mathematics Entrance Examination</h3>
+  <p class="content-entry__description">English transcription of the 2027 master's entrance examination for the Mathematics and Mathematical Informatics Course, with selected unofficial solutions.</p>
+  <p class="content-entry__action"><a href="/notes/chiba-2027/">View the problems and solutions</a></p>
+</article>
+
+<article class="content-entry">
   <h3 class="content-entry__title">Undergraduate Seminar in Commutative Algebra</h3>
   <p class="content-entry__description">Notes from my graduation seminar based on Atiyah and MacDonald's <em>Introduction to Commutative Algebra</em>.</p>
   <p class="content-entry__action"><a href="https://tinyurl.com/Undergraduateseminar">Read the seminar notes</a></p>
