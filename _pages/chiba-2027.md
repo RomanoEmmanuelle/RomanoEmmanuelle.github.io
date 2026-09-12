@@ -32,7 +32,7 @@ author_profile: true
 <article class="exam-problem" id="a0">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A0</span>
-    <a class="exam-problem__anchor" href="#a0" aria-label="Link to problem A0">#</a>
+    <a class="exam-problem__anchor" href="#a0" aria-label="Link to problem A0"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(\mathbb{N}\)</span> be the set of all natural numbers and <span class="exam-math exam-math--inline">\(\mathbb{Z}\)</span> the set of all integers. For a map <span class="exam-math exam-math--inline">\(f:\mathbb{N}\to\mathbb{Z}\)</span>, consider the following condition.</p>
