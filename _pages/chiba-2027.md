@@ -4,36 +4,12 @@ title: "Chiba University 2027 Mathematics Entrance Examination"
 permalink: /notes/chiba-2027/
 author_profile: true
 ---
-
-<p class="exam-lead">Below are the questions from the 2027 entrance examination for the Master's Program in the Mathematics and Mathematical Informatics Course at Chiba University.</p>
-
 <aside class="exam-disclaimer" aria-label="Disclaimer">
-  <strong>Disclaimer.</strong> The solutions provided here are not official solutions, and the English translation of the questions is not an official translation. Both may contain errors.
+  <strong>Disclaimer.</strong> The solutions provided here are not official solutions, and the English translation of the questions is not an official translation.
 </aside>
 
-<section class="exam-overview" aria-labelledby="exam-details-heading">
-  <h2 id="exam-details-heading">Examination details</h2>
-  <dl>
-    <div><dt>Program</dt><dd>Master's Program, Graduate School of Science and Engineering</dd></div>
-    <div><dt>Course</dt><dd>Mathematics and Mathematical Informatics Course</dd></div>
-    <div><dt>Date</dt><dd>Sunday, August 2, 2026</dd></div>
-    <div><dt>Duration</dt><dd>240 minutes</dd></div>
-  </dl>
-</section>
-
-<section class="exam-instructions" aria-labelledby="exam-instructions-heading">
-  <h2 id="exam-instructions-heading">Instructions</h2>
-  <ol>
-    <li>There is one A0 problem, five A problems, and eleven B problems.<br>A0 must be answered by all examinees.<br>A problems: Answer <u>any three</u> of A1,...,A5.<br>(Answering four or more problems is not permitted.)<br>B problems: Answer <u>any one</u> of B1,...,B11.<br>(Answering two or more problems is not permitted.)</li>
-    <li>There are five answer sheets. Write your <u>course name and examinee number</u> on all of them.</li>
-    <li>Clearly write the <u>problem number</u> you intend to answer on each answer sheet, and answer <u>only one problem per sheet</u>.<br>Do not take the answer sheets home, even if you cannot answer the problems.</li>
-    <li>If you run out of space on the answer sheets, you may also use the reverse sides.</li>
-    <li>You may take the question booklet home.</li>
-  </ol>
-</section>
-
 <nav class="exam-index" aria-label="Problem index">
-  <span>Jump to:</span>
+  <span>Index</span>
   <a href="#a0">A0</a>
     <a href="#a1">A1</a>
     <a href="#a2">A2</a>
