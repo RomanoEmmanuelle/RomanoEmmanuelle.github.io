@@ -52,12 +52,6 @@ author_profile: true
 </article>
 
 <article class="content-entry">
-  <h3 class="content-entry__title">Polymath Jr 2026</h3>
-  <p class="content-entry__meta">June–August 2026</p>
-  <p class="content-entry__description">Collaborative undergraduate research on binomial edge ideals under <a href="https://aseceleanu.github.io/">Professor Alexandra Seceleanu</a>.</p>
-</article>
-
-<article class="content-entry">
   <h3 class="content-entry__title">Buka Meja Season 6 Reading Group</h3>
   <p class="content-entry__meta">January–March 2026</p>
   <p class="content-entry__description">Studied Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions. <a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">Presentation slides</a></p>
