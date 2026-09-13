@@ -9,18 +9,15 @@ author_profile: true
 
 <article class="content-entry">
   <h3 class="content-entry__title">Chiba University 2027 Mathematics Entrance Examination</h3>
-  <p class="content-entry__description">English transcription of the 2027 master's entrance examination for the Mathematics and Mathematical Informatics Course, with selected unofficial solutions.</p>
-  <p class="content-entry__action"><a href="/notes/chiba-2027/">View the problems and solutions</a></p>
+  <p class="content-entry__action"><a href="/notes/chiba-2027/">(Problems and Solution)</a></p>
 </article>
 
 <article class="content-entry">
   <h3 class="content-entry__title">Undergraduate Seminar in Commutative Algebra</h3>
-  <p class="content-entry__description">Notes from my graduation seminar based on Atiyah and MacDonald's <em>Introduction to Commutative Algebra</em>.</p>
-  <p class="content-entry__action"><a href="https://tinyurl.com/Undergraduateseminar">Read the seminar notes</a></p>
+  <p class="content-entry__action"><a href="https://tinyurl.com/Undergraduateseminar">(Seminar Notes)</a></p>
 </article>
 
 <article class="content-entry">
   <h3 class="content-entry__title">Buka Meja Season 6</h3>
-  <p class="content-entry__description">Presentation slides on Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions.</p>
-  <p class="content-entry__action"><a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">View the presentation slides</a></p>
+  <p class="content-entry__action"><a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">(Presentation slides)</a></p>
 </article>
