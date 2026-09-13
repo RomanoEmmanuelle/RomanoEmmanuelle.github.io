@@ -12,5 +12,4 @@ I am a fourth-year undergraduate student in the [Department of Mathematics and I
 
 - Commutative algebra
 - Binomial edge ideals
-- Analytic and number-theoretic methods
-- Mathematical exposition and education
+- Combinatorial commutative algebra
