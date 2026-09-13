@@ -28,10 +28,12 @@
 }
 
 .archive--full-width {
-  @include breakpoint($large) {
-    @include span(12 of 12);
-    @include prefix(0);
-  }
+  float: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .archive__subtitle {
