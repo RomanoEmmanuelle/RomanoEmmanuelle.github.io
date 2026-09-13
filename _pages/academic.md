@@ -11,7 +11,7 @@ author_profile: true
   <article class="education-entry">
     <time class="education-date">Apr 2023 – Mar 2027</time>
     <div>
-      <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">Chiba University</a><span class="external-arrow" aria-hidden="true">↗</span></h3>
+      <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">Chiba University</a></h3>
       <p class="education-program">Undergraduate — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a><span class="external-arrow" aria-hidden="true">↗</span></p>
       <p class="education-note">Advisor: <a href="https://sites.google.com/view/ktsato">Kenta Sato</a><span class="external-arrow" aria-hidden="true">↗</span></p>
     </div>
