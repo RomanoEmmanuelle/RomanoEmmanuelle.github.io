@@ -12,15 +12,15 @@ author_profile: true
     <time class="education-date">Apr 2023 – Mar 2027</time>
     <div>
       <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">Chiba University</a></h3>
-      <p class="education-program">Undergraduate — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a><span class="external-arrow" aria-hidden="true">↗</span></p>
-      <p class="education-note">Advisor: <a href="https://sites.google.com/view/ktsato">Kenta Sato</a><span class="external-arrow" aria-hidden="true">↗</span></p>
+      <p class="education-program">Undergraduate — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a></p>
+      <p class="education-note">Advisor: <a href="https://sites.google.com/view/ktsato">Kenta Sato</a></p>
     </div>
   </article>
 
   <article class="education-entry">
     <time class="education-date">Mar 2022 – Mar 2023</time>
     <div>
-      <h3 class="education-school"><a href="https://www.osaka-u.ac.jp/en">Osaka University</a><span class="external-arrow" aria-hidden="true">↗</span></h3>
+      <h3 class="education-school"><a href="https://www.osaka-u.ac.jp/en">Osaka University</a></h3>
       <p class="education-program">One-Year Language and Science Preparation Program</p>
     </div>
   </article>
@@ -28,7 +28,7 @@ author_profile: true
   <article class="education-entry">
     <time class="education-date">Aug 2021 – Jan 2022</time>
     <div>
-      <h3 class="education-school"><a href="https://itb.ac.id/">Bandung Institute of Technology</a><span class="external-arrow" aria-hidden="true">↗</span></h3>
+      <h3 class="education-school"><a href="https://itb.ac.id/">Bandung Institute of Technology</a></h3>
       <p class="education-program">Undergraduate — Faculty of Mathematics and Natural Sciences</p>
       <p class="education-note">Opted out to continue studying in Japan</p>
     </div>
