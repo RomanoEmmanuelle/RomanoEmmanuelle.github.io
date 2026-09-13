@@ -3,6 +3,7 @@ layout: archive
 title: "Miscellaneous"
 permalink: /miscellaneous/
 author_profile: false
+full_width: true
 ---
 
 <section class="misc-intro" aria-labelledby="running-title">

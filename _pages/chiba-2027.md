@@ -3,6 +3,7 @@ layout: archive
 title: "Chiba University 2027 Mathematics Entrance Examination"
 permalink: /notes/chiba-2027/
 author_profile: false
+full_width: true
 ---
 
 <p class="exam-lead">Below are the questions from the 2027 entrance examination for the Master's Program in the Mathematics and Mathematical Informatics Course at Chiba University.</p>

@@ -3,6 +3,7 @@ layout: archive
 title: "Notes"
 permalink: /notes/
 author_profile: false
+full_width: true
 ---
 
 ## Mathematics notes
