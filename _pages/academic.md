@@ -29,7 +29,7 @@ author_profile: true
   <article class="education-entry">
     <time class="education-date">Mar 2022 – Mar 2023</time>
     <div>
-      <h3 class="education-school"><a href="https://www.osaka-u.ac.jp/en">Osaka University</a></h3>
+      <h3 class="education-school"><a href="http://www.cjlc.osaka-u.ac.jp">CJLC - Osaka University</a></h3>
       <p class="education-program">One-Year Language and Science Preparation Program</p>
     </div>
   </article>
