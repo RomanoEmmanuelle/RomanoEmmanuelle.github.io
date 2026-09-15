@@ -8,8 +8,17 @@ author_profile: true
 ## Education
 
 <div class="education-list">
+    <article class="education-entry">
+    <time class="education-date">Apr 2027 – Mar 2029</time>
+    <div>
+      <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">The University of Osaka (expected)</a></h3>
+      <p class="education-program">Master — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Pure and Applied Mathematics</a></p>
+      <p class="education-note">Advisor: <a href="https://sv2-mat.ist.osaka-u.ac.jp/~higashitani/index.html">Akihiro Higashitani</a></p>
+    </div>
+  </article>
+  
   <article class="education-entry">
-    <time class="education-date">Apr 2023 – Mar 2027</time>
+    <time class="education-date">Apr 2023 – Mar 2027 (expected)</time>
     <div>
       <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">Chiba University</a></h3>
       <p class="education-program">Undergraduate — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a></p>
