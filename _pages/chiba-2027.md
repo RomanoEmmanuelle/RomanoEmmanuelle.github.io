@@ -55,7 +55,7 @@ full_width: true
 </ol>
   </div>
 <details class="exam-solution">
-  <summary>Show solution</summary>
+  <summary>Solution</summary>
   <div class="exam-solution__body">
 <ol>
 <li>We show that (a) <span class="exam-math exam-math--inline">\(f\sim f\)</span>, (b) <span class="exam-math exam-math--inline">\(f \sim g \Rightarrow g\sim f\)</span>, and (c) <span class="exam-math exam-math--inline">\((f \sim g \text{ and } g \sim h) \Rightarrow f \sim h\)</span> for every <span class="exam-math exam-math--inline">\(f,g,h \in F\)</span>.
@@ -123,7 +123,7 @@ full_width: true
 </ol>
   </div>
 <details class="exam-solution">
-  <summary>Show solution</summary>
+  <summary>Solution</summary>
   <div class="exam-solution__body">
 <ol>
 <li>From the statements we have <span class="exam-math exam-math--inline">\(W_1=\{X \in W \mid X = {}^tX\}\)</span> and <span class="exam-math exam-math--inline">\(W_2=\{X \in W \mid -X={}^tX\}\)</span>. We show that (a) <span class="exam-math exam-math--inline">\(V=W_1+V_2\)</span> and (b) <span class="exam-math exam-math--inline">\(W_1 \cap W_2=\varnothing\)</span>.
@@ -227,7 +227,7 @@ T_N(X) &amp;= NX + {}^t (NX);\\
 </ol>
   </div>
 <details class="exam-solution">
-  <summary>Show solution</summary>
+  <summary>Solution</summary>
   <div class="exam-solution__body">
 <ol>
 <li><strong>Claim.</strong> <span class="exam-math exam-math--inline">\(f_n(x)\)</span> converges pointwise to <span class="exam-math exam-math--inline">\(0\)</span> for <span class="exam-math exam-math--inline">\(x \in [0,1]\)</span>.<br>
@@ -277,7 +277,7 @@ T_N(X) &amp;= NX + {}^t (NX);\\
 </ol>
   </div>
 <details class="exam-solution">
-  <summary>Show solution</summary>
+  <summary>Solution</summary>
   <div class="exam-solution__body">
 <ol>
 <li>Define natural projection <span class="exam-math exam-math--inline">\(\pi:\mathbb R^2 \to X:= \mathbb R^2/\sim\)</span>. Take <span class="exam-math exam-math--inline">\(\mathbf U:= \{[(x,y) \in X \mid xy=1, x&gt;0]\}\)</span>. Thus,
@@ -405,7 +405,7 @@ N_G(H)&amp;=\{X\in G\mid XH=HX\}
 </ol>
   </div>
 <details class="exam-solution">
-  <summary>Show solution</summary>
+  <summary>Solution</summary>
   <div class="exam-solution__body">
 <ol>
 <li>(i).
