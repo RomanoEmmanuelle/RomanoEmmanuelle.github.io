@@ -12,7 +12,7 @@ author_profile: true
     <time class="education-date">Apr 2027 – Mar 2029</time>
     <div>
       <h3 class="education-school"><a href="https://www.osaka-u.ac.jp/en">The University of Osaka</a></h3>
-      <p class="education-program">Incoming Master — <a href="https://www.math.sci.osaka-u.ac.jp/en/">Department of Pure and Applied Mathematics</a></p>
+      <p class="education-program">Incoming Master - <a href="https://www.math.sci.osaka-u.ac.jp/en/">Department of Pure and Applied Mathematics</a></p>
       <p class="education-note">Advisor: <a href="https://sv2-mat.ist.osaka-u.ac.jp/~higashitani/index.html">Akihiro Higashitani</a></p>
     </div>
   </article>
@@ -21,7 +21,7 @@ author_profile: true
     <time class="education-date">Apr 2023 – Mar 2027</time>
     <div>
       <h3 class="education-school"><a href="https://www.chiba-u.ac.jp/e/">Chiba University</a></h3>
-      <p class="education-program">Undergraduate — <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics (expected)</a></p>
+      <p class="education-program">Undergraduate (expected) - <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a></p>
       <p class="education-note">Advisor: <a href="https://sites.google.com/view/ktsato">Kenta Sato</a></p>
     </div>
   </article>
@@ -38,7 +38,7 @@ author_profile: true
     <time class="education-date">Aug 2021 – Jan 2022</time>
     <div>
       <h3 class="education-school"><a href="https://itb.ac.id/">Bandung Institute of Technology</a></h3>
-      <p class="education-program">Undergraduate — Faculty of Mathematics and Natural Sciences</p>
+      <p class="education-program">Undergraduate - Faculty of Mathematics and Natural Sciences</p>
       <p class="education-note">Opted out to continue studying in Japan</p>
     </div>
   </article>
@@ -47,7 +47,7 @@ author_profile: true
     <time class="education-date">Jul 2018 – Jun 2021</time>
     <div>
       <h3 class="education-school">SMAK 2 BPK Penabur Bandung</h3>
-      <p class="education-program">High School Diploma — Natural Sciences</p>
+      <p class="education-program">High School Diploma - Natural Sciences</p>
     </div>
   </article>
 </div>
@@ -57,13 +57,16 @@ author_profile: true
 <article class="content-entry">
   <h3 class="content-entry__title">Graduation Seminar: Commutative Algebra</h3>
   <p class="content-entry__meta">Chiba University · April 2026–March 2027</p>
-  <p class="content-entry__description">Reading Atiyah and MacDonald's <em>Introduction to Commutative Algebra</em> under Professor Kenta Sato. <a href="https://tinyurl.com/Undergraduateseminar">Seminar notes</a></p>
+  <p class="content-entry__action">
+  <a href=""><s>Notes</s></a>
+</p>
 </article>
 
 <article class="content-entry">
   <h3 class="content-entry__title">Buka Meja Season 6 Reading Group</h3>
   <p class="content-entry__meta">January–March 2026</p>
-  <p class="content-entry__description">Studied Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions. <a href="https://drive.google.com/file/d/17G0R44_4OVllj4q9d3raz7_3l6X1oZeF/view?usp=sharing">Presentation slides</a></p>
+ <a href="https://drive.google.com/file/d/1FS7WNH2AYR7HdGQYhIbAEcWw0S9jE4g-/view?usp=sharing">Slide</a></p>
+<a href="https://drive.google.com/file/d/1vu4_w-Pp3o71_XQwv9dh7ZbLusX4RuUd/view?usp=sharing">Final Presentation</a></p>
 </article>
 
 ## Publications
@@ -91,6 +94,6 @@ author_profile: true
 ## Honors and awards
 
 <ul class="hierarchy-list">
-  <li><strong>MEXT Scholarship Program</strong>, December 2021 — selected as one of six awardees from thousands of applicants</li>
+  <li><strong>MEXT Scholarship Program</strong>, December 2021 - selected as one of six awardees from thousands of applicants</li>
   <li><strong>Dean's List</strong>, Bandung Institute of Technology, first semester of 2021–2022</li>
 </ul>
