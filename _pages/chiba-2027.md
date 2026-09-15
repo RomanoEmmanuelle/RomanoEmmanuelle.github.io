@@ -6,32 +6,9 @@ author_profile: false
 full_width: true
 ---
 
-<p class="exam-lead">Below are the questions from the 2027 entrance examination for the Master's Program in the Mathematics and Mathematical Informatics Course at Chiba University.</p>
-
 <aside class="exam-disclaimer" aria-label="Disclaimer">
   <strong>Disclaimer.</strong> The solutions provided here are not official solutions, and the English translation of the questions is not an official translation. Both may contain errors.
 </aside>
-
-<section class="exam-overview" aria-labelledby="exam-details-heading">
-  <h2 id="exam-details-heading">Examination details</h2>
-  <dl>
-    <div><dt>Program</dt><dd>Master's Program, Graduate School of Science and Engineering</dd></div>
-    <div><dt>Course</dt><dd>Mathematics and Mathematical Informatics Course</dd></div>
-    <div><dt>Date</dt><dd>Sunday, August 2, 2026</dd></div>
-    <div><dt>Duration</dt><dd>240 minutes</dd></div>
-  </dl>
-</section>
-
-<section class="exam-instructions" aria-labelledby="exam-instructions-heading">
-  <h2 id="exam-instructions-heading">Instructions</h2>
-  <ol>
-    <li>There is one A0 problem, five A problems, and eleven B problems.<br>A0 must be answered by all examinees.<br>A problems: Answer <u>any three</u> of A1,...,A5.<br>(Answering four or more problems is not permitted.)<br>B problems: Answer <u>any one</u> of B1,...,B11.<br>(Answering two or more problems is not permitted.)</li>
-    <li>There are five answer sheets. Write your <u>course name and examinee number</u> on all of them.</li>
-    <li>Clearly write the <u>problem number</u> you intend to answer on each answer sheet, and answer <u>only one problem per sheet</u>.<br>Do not take the answer sheets home, even if you cannot answer the problems.</li>
-    <li>If you run out of space on the answer sheets, you may also use the reverse sides.</li>
-    <li>You may take the question booklet home.</li>
-  </ol>
-</section>
 
 <nav class="exam-index" aria-label="Problem index">
   <span>Jump to:</span>
@@ -57,7 +34,7 @@ full_width: true
 <article class="exam-problem" id="a0">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A0</span>
-    <a class="exam-problem__anchor" href="#a0" aria-label="Link to problem A0">#</a>
+    <a class="exam-problem__anchor" href="#a0" aria-label="Link to problem A0"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(\mathbb{N}\)</span> be the set of all natural numbers and <span class="exam-math exam-math--inline">\(\mathbb{Z}\)</span> the set of all integers. For a map <span class="exam-math exam-math--inline">\(f:\mathbb{N}\to\mathbb{Z}\)</span>, consider the following condition.</p>
@@ -130,7 +107,7 @@ full_width: true
 <article class="exam-problem" id="a1">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A1</span>
-    <a class="exam-problem__anchor" href="#a1" aria-label="Link to problem A1">#</a>
+    <a class="exam-problem__anchor" href="#a1" aria-label="Link to problem A1"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(V\)</span> be the real vector space of all real <span class="exam-math exam-math--inline">\(n\times n\)</span> matrices. Write <span class="exam-math exam-math--inline">\({}^{\mathrm t}X\)</span> for the transpose of a matrix <span class="exam-math exam-math--inline">\(X\)</span>. For <span class="exam-math exam-math--inline">\(A\in V\)</span>, define <span class="exam-math exam-math--inline">\(T_A:V\to V\)</span> by <span class="exam-math exam-math--inline">\(T_A(X)=AX+{}^tX {}^tA\)</span>. Then <span class="exam-math exam-math--inline">\(T_A\)</span> is a linear transformation of <span class="exam-math exam-math--inline">\(V\)</span> (you do not need to prove this).</p>
@@ -234,7 +211,7 @@ T_N(X) &amp;= NX + {}^t (NX);\\
 <article class="exam-problem" id="a2">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A2</span>
-    <a class="exam-problem__anchor" href="#a2" aria-label="Link to problem A2">#</a>
+    <a class="exam-problem__anchor" href="#a2" aria-label="Link to problem A2"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(\alpha,\beta&gt;0\)</span>. For a positive integer <span class="exam-math exam-math--inline">\(n\)</span>, define</p>
@@ -284,7 +261,7 @@ T_N(X) &amp;= NX + {}^t (NX);\\
 <article class="exam-problem" id="a3">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A3</span>
-    <a class="exam-problem__anchor" href="#a3" aria-label="Link to problem A3">#</a>
+    <a class="exam-problem__anchor" href="#a3" aria-label="Link to problem A3"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(a\in\mathbb{R}\)</span> be a real number satisfying <span class="exam-math exam-math--inline">\(1&lt;a\)</span>. Define an equivalence relation <span class="exam-math exam-math--inline">\(\sim\)</span> on <span class="exam-math exam-math--inline">\(\mathbb{R}^2\)</span> by</p>
@@ -331,7 +308,7 @@ T_N(X) &amp;= NX + {}^t (NX);\\
 <article class="exam-problem" id="a4">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A4</span>
-    <a class="exam-problem__anchor" href="#a4" aria-label="Link to problem A4">#</a>
+    <a class="exam-problem__anchor" href="#a4" aria-label="Link to problem A4"></a>
   </header>
   <div class="exam-problem__question">
 <p>For real numbers <span class="exam-math exam-math--inline">\(\mu,\ \sigma\)</span>, define the probability distribution <span class="exam-math exam-math--inline">\(\Lambda(\mu,\sigma^2)\)</span> on the positive real numbers by the probability density function</p>
@@ -352,7 +329,7 @@ T_N(X) &amp;= NX + {}^t (NX);\\
 <article class="exam-problem" id="a5">
   <header class="exam-problem__header">
     <span class="exam-problem__label">A5</span>
-    <a class="exam-problem__anchor" href="#a5" aria-label="Link to problem A5">#</a>
+    <a class="exam-problem__anchor" href="#a5" aria-label="Link to problem A5"></a>
   </header>
   <div class="exam-problem__question">
 <p>Answer each question about the following Python program.</p>
@@ -383,7 +360,7 @@ def h(n, q):
 <article class="exam-problem" id="b1">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B1</span>
-    <a class="exam-problem__anchor" href="#b1" aria-label="Link to problem B1">#</a>
+    <a class="exam-problem__anchor" href="#b1" aria-label="Link to problem B1"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(F=\mathbb{F}_{11}\)</span> be the finite field of order <span class="exam-math exam-math--inline">\(11\)</span>, and let <span class="exam-math exam-math--inline">\(G=GL_2(F)\)</span> be the general linear group of degree <span class="exam-math exam-math--inline">\(2\)</span>. Let <span class="exam-math exam-math--inline">\(H\)</span> be the subgroup of <span class="exam-math exam-math--inline">\(G\)</span> generated by <span class="exam-math exam-math--inline">\(A=\begin{bmatrix}1&amp;1\\0&amp;1\end{bmatrix},\ B=\begin{bmatrix}3&amp;0\\0&amp;1\end{bmatrix}\)</span>.</p>
@@ -407,7 +384,7 @@ N_G(H)&amp;=\{X\in G\mid XH=HX\}
 <article class="exam-problem" id="b2">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B2</span>
-    <a class="exam-problem__anchor" href="#b2" aria-label="Link to problem B2">#</a>
+    <a class="exam-problem__anchor" href="#b2" aria-label="Link to problem B2"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(K\)</span> be a field.</p>
@@ -463,7 +440,7 @@ N_G(H)&amp;=\{X\in G\mid XH=HX\}
 <article class="exam-problem" id="b3">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B3</span>
-    <a class="exam-problem__anchor" href="#b3" aria-label="Link to problem B3">#</a>
+    <a class="exam-problem__anchor" href="#b3" aria-label="Link to problem B3"></a>
   </header>
   <div class="exam-problem__question">
 <p>Answer the following questions.</p>
@@ -494,7 +471,7 @@ N_G(H)&amp;=\{X\in G\mid XH=HX\}
 <article class="exam-problem" id="b4">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B4</span>
-    <a class="exam-problem__anchor" href="#b4" aria-label="Link to problem B4">#</a>
+    <a class="exam-problem__anchor" href="#b4" aria-label="Link to problem B4"></a>
   </header>
   <div class="exam-problem__question">
 <p>For a space <span class="exam-math exam-math--inline">\(X\)</span>, a subset <span class="exam-math exam-math--inline">\(\partial X\subset X\)</span>, and a homeomorphism <span class="exam-math exam-math--inline">\(\phi:X\to X\)</span> preserving <span class="exam-math exam-math--inline">\(\partial X\)</span>, consider the following construction.</p>
@@ -522,7 +499,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b5">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B5</span>
-    <a class="exam-problem__anchor" href="#b5" aria-label="Link to problem B5">#</a>
+    <a class="exam-problem__anchor" href="#b5" aria-label="Link to problem B5"></a>
   </header>
   <div class="exam-problem__question">
 <p>Answer the following questions.</p>
@@ -545,7 +522,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b6">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B6</span>
-    <a class="exam-problem__anchor" href="#b6" aria-label="Link to problem B6">#</a>
+    <a class="exam-problem__anchor" href="#b6" aria-label="Link to problem B6"></a>
   </header>
   <div class="exam-problem__question">
 <p>With respect to Lebesgue measure on <span class="exam-math exam-math--inline">\([0,1]\)</span>, the inner product on the Hilbert space <span class="exam-math exam-math--inline">\(L^2[0,1]\)</span> is given by</p>
@@ -568,7 +545,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b7">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B7</span>
-    <a class="exam-problem__anchor" href="#b7" aria-label="Link to problem B7">#</a>
+    <a class="exam-problem__anchor" href="#b7" aria-label="Link to problem B7"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\((\Omega,\mathcal F,P)\)</span> be a probability space, let <span class="exam-math exam-math--inline">\(A_n\in\mathcal F,\ n=1,2,\ldots\)</span> be a sequence of events, and let <span class="exam-math exam-math--inline">\(A=\displaystyle\bigcap_{k=1}^{\infty}\bigcup_{n=k}^{\infty}A_n\)</span>. Answer the following questions.</p>
@@ -590,7 +567,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b8">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B8</span>
-    <a class="exam-problem__anchor" href="#b8" aria-label="Link to problem B8">#</a>
+    <a class="exam-problem__anchor" href="#b8" aria-label="Link to problem B8"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(\theta\)</span> be a positive real number and <span class="exam-math exam-math--inline">\(n\)</span> an integer with <span class="exam-math exam-math--inline">\(n\geq2\)</span>. Suppose that the mutually independent random variables <span class="exam-math exam-math--inline">\(X_1,\ldots,X_n\)</span> all have probability density function</p>
@@ -615,7 +592,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b9">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B9</span>
-    <a class="exam-problem__anchor" href="#b9" aria-label="Link to problem B9">#</a>
+    <a class="exam-problem__anchor" href="#b9" aria-label="Link to problem B9"></a>
   </header>
   <div class="exam-problem__question">
 <p>Let <span class="exam-math exam-math--inline">\(k\)</span> be a positive integer, and let <span class="exam-math exam-math--inline">\(p=6k+1,\ q=12k+1,\ r=18k+1,\ n=pqr\)</span>. Suppose further that <span class="exam-math exam-math--inline">\(p,q,r\)</span> are all prime. Answer (1), (2), and (3) below.</p>
@@ -645,7 +622,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b10">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B10</span>
-    <a class="exam-problem__anchor" href="#b10" aria-label="Link to problem B10">#</a>
+    <a class="exam-problem__anchor" href="#b10" aria-label="Link to problem B10"></a>
   </header>
   <div class="exam-problem__question">
 <p>Consider formulas of (classical) propositional logic constructed from a single propositional variable <span class="exam-math exam-math--inline">\(p\)</span> and the logical connectives <span class="exam-math exam-math--inline">\(\neg\)</span> (negation) and <span class="exam-math exam-math--inline">\(\land\)</span> (conjunction). That is, a string belonging to the language defined by the following context-free grammar <span class="exam-math exam-math--inline">\(G=(V,\Sigma,P,S)\)</span> is called a formula. Here <span class="exam-math exam-math--inline">\(V=\{S\}\)</span> is the set of nonterminal symbols, <span class="exam-math exam-math--inline">\(\Sigma=\{p,\neg,\land,(,)\}\)</span> is the set of terminal symbols, <span class="exam-math exam-math--inline">\(P\)</span> is the set of production rules shown below, and <span class="exam-math exam-math--inline">\(S\)</span> denotes the nonterminal serving as the start symbol (also called the initial symbol). <br></p>
@@ -665,7 +642,7 @@ A&amp;:=\partial X\times[0,1]/{\sim},\quad (x,1)\sim(\phi(x),0)\quad(x\in\partia
 <article class="exam-problem" id="b11">
   <header class="exam-problem__header">
     <span class="exam-problem__label">B11</span>
-    <a class="exam-problem__anchor" href="#b11" aria-label="Link to problem B11">#</a>
+    <a class="exam-problem__anchor" href="#b11" aria-label="Link to problem B11"></a>
   </header>
   <div class="exam-problem__question">
 <p>Answer the questions about the following OCaml program.</p>
