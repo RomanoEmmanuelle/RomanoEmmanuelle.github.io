@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a fourth-year undergraduate student in the [Department of Mathematics and Informatics](https://www.math.s.chiba-u.ac.jp/) at [Chiba University](https://www.chiba-u.ac.jp/), Japan. I study **commutative algebra** under the supervision of [Professor Kenta Sato](https://sites.google.com/view/ktsato).
+I am a fourth-year undergraduate student in the [Department of Mathematics and Informatics](https://www.math.s.chiba-u.ac.jp/) at [Chiba University](https://www.chiba-u.ac.jp/), Japan. I study **commutative algebra** under the supervision of Professor [Kenta Sato](https://sites.google.com/view/ktsato). I am expected to begin my master’s program at The University of Osaka from April 2027.
 
 ## Research interests
 
