@@ -200,15 +200,18 @@
 .landing-hero__portrait {
   position: relative;
   isolation: isolate;
+  width: 75%;
+  --portrait-shadow-offset: 0.35rem;
 }
 
 .landing-hero__portrait::after {
   position: absolute;
-  inset: 1.25rem -1.25rem -1.25rem 1.25rem;
+  inset: 0;
   z-index: -1;
   content: "";
   background: var(--global-border-color);
   border-radius: 1.25rem;
+  transform: translate(var(--portrait-shadow-offset), var(--portrait-shadow-offset));
 }
 
 .landing-hero__portrait img {
@@ -281,10 +284,6 @@
 }
 
 @media (max-width: 420px) {
-  .landing-hero__portrait::after {
-    inset: 0.8rem -0.8rem -0.8rem 0.8rem;
-  }
-
   .landing-hero__portrait img {
     border-radius: 1rem;
   }
