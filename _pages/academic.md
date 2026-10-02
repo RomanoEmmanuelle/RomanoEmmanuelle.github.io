@@ -12,7 +12,7 @@ author_profile: true
     <time class="education-date">Apr 2027 – Mar 2029</time>
     <div>
       <h3 class="education-school"><a href="https://www.osaka-u.ac.jp/en">The University of Osaka</a></h3>
-      <p class="education-program">Incoming Master - <a href="https://www.math.sci.osaka-u.ac.jp/en/">Department of Pure and Applied Mathematics</a></p>
+      <p class="education-program">Incoming Master - <a href="https://www.ist.osaka-u.ac.jp/english/majors/ma.php">Department of Pure and Applied Mathematics</a></p>
       <p class="education-note">Advisor: <a href="https://sv2-mat.ist.osaka-u.ac.jp/~higashitani/index.html">Akihiro Higashitani</a></p>
     </div>
   </article>
@@ -37,7 +37,7 @@ author_profile: true
   <article class="education-entry">
     <time class="education-date">Aug 2021 – Jan 2022</time>
     <div>
-      <h3 class="education-school"><a href="https://itb.ac.id/">Bandung Institute of Technology</a></h3>
+      <h3 class="education-school"><a href="https://fmipa.itb.ac.id">Bandung Institute of Technology</a></h3>
       <p class="education-program">Undergraduate - Faculty of Mathematics and Natural Sciences</p>
       <p class="education-note">Opted out to continue studying in Japan</p>
     </div>
@@ -46,7 +46,7 @@ author_profile: true
   <article class="education-entry">
     <time class="education-date">Jul 2018 – Jun 2021</time>
     <div>
-      <h3 class="education-school">SMAK 2 BPK Penabur Bandung</h3>
+      <h3 class="education-school"><a href="https://bpkpenabur.or.id/smak-2-bpk-penabur-bandung?menu=beranda">SMAK 2 BPK Penabur Bandung</a></h3>
       <p class="education-program">High School Diploma - Natural Sciences</p>
     </div>
   </article>
