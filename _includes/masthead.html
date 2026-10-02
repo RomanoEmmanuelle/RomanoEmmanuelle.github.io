@@ -18,20 +18,15 @@
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
-          </li>
-          <li class="masthead__menu-item persist language-control">
-            <div id="site-language" class="language-toggle" role="radiogroup" aria-label="Language">
-              <input class="visually-hidden" type="radio" name="site-language" id="language-en" value="en" checked>
-              <label for="language-en" lang="en">EN</label>
-              <input class="visually-hidden" type="radio" name="site-language" id="language-ja" value="ja">
-              <label for="language-ja" lang="ja">日本語</label>
-            </div>
-          </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <div class="masthead__tools">
+        <button id="theme-toggle" class="masthead__tool" type="button" aria-label="toggle theme" title="toggle theme">
+          <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+        <button id="site-language" class="masthead__tool language-toggle" type="button" aria-label="Switch to Japanese" title="Switch to Japanese" lang="en">EN</button>
+      </div>
     </div>
   </div>
 </div>

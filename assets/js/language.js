@@ -9,7 +9,7 @@
 
   // Keep the original text nodes so switching languages preserves links and markup.
   while ((node = walker.nextNode())) {
-    if (node.parentElement.closest('script, style, pre, code, math, .MathJax, .language-control, [data-language]')) continue;
+    if (node.parentElement.closest('script, style, pre, code, math, .MathJax, #site-language, [data-language]')) continue;
     var original = node.nodeValue;
     var key = original.trim().replace(/\s+/g, ' ');
     if (Object.prototype.hasOwnProperty.call(translations, key)) {
@@ -31,9 +31,10 @@
   function applyLanguage(language) {
     var japanese = language === 'ja';
     document.documentElement.lang = japanese ? 'ja' : 'en';
-    control.querySelectorAll('input').forEach(function (input) {
-      input.checked = input.value === (japanese ? 'ja' : 'en');
-    });
+    control.textContent = japanese ? '日本語' : 'EN';
+    control.lang = japanese ? 'ja' : 'en';
+    control.setAttribute('aria-label', japanese ? 'Switch to English' : 'Switch to Japanese');
+    control.title = japanese ? 'Switch to English' : 'Switch to Japanese';
     document.querySelectorAll('[data-language]').forEach(function (element) {
       element.hidden = element.dataset.language !== (japanese ? 'ja' : 'en');
     });
@@ -51,8 +52,8 @@
   var savedLanguage = 'en';
   try { savedLanguage = localStorage.getItem('site-language') || 'en'; } catch (error) { /* Storage may be disabled. */ }
   applyLanguage(savedLanguage);
-  control.addEventListener('change', function (event) {
-    var language = event.target.value;
+  control.addEventListener('click', function () {
+    var language = document.documentElement.lang === 'ja' ? 'en' : 'ja';
     applyLanguage(language);
     try { localStorage.setItem('site-language', language); } catch (error) { /* Switching still works without storage. */ }
   });
