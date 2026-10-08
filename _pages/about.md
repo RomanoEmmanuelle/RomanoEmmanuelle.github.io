@@ -11,5 +11,5 @@ redirect_from:
 
 ## Current Research interests
 - Commutative Algebra
-- Combinatorial Commutative Algebra: Toric Rings and SAGBI Bases
+- Combinatorial Commutative Algebra : Toric Rings and SAGBI Bases
 
