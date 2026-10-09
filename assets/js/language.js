@@ -3,6 +3,7 @@
 
   var translations = JSON.parse(document.getElementById('site-translations').textContent);
   var control = document.getElementById('site-language');
+  if (!control) return;
   var entries = [];
   var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   var node;

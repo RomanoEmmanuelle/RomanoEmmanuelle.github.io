@@ -9,10 +9,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
-  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  document.documentElement.classList.replace('no-js', 'js');
+  // Apply the saved/system theme before the first paint, including when storage is blocked.
+  var initialTheme;
+  try { initialTheme = localStorage.getItem('theme'); } catch (error) {}
+  if (initialTheme !== 'light' && initialTheme !== 'dark') {
+    initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  if (initialTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  else document.documentElement.removeAttribute('data-theme');
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v=layout-5">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v=layout-6">
 <script id="site-translations" type="application/json">{{ site.data.translations | jsonify }}</script>
-<script defer src="{{ base_path }}/assets/js/language.js?v=3"></script>
+<script defer src="{{ base_path }}/assets/js/language.js?v=4"></script>

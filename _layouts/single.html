@@ -14,7 +14,7 @@ layout: default
   {% endunless %}
 {% endif %}
 
-<div id="main" role="main">
+<div id="main" role="main" class="site-main{% if page.full_width != true %}{% if page.author_profile or layout.author_profile or page.sidebar %} site-main--with-sidebar{% endif %}{% endif %}">
   {% include sidebar.html %}
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">

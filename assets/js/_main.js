@@ -9,52 +9,40 @@
 const PLOTLY_URL = "https://cdn.jsdelivr.net/npm/plotly.js@3.6.0/dist/plotly.min.js";
 const MERMAID_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
 
-// Detect OS/browser preference
-const browserPref = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+// Storage can be disabled by browser privacy settings.
+function savedTheme() {
+  try { return localStorage.getItem("theme"); } catch (error) { return null; }
+}
 
-// Determine the computed theme, which can be "dark" or "light".
 function determineComputedTheme() {
-  // Determine the expected state of the theme toggle, which can be "dark", "light", or default "system"
-  let themeSetting = localStorage.getItem("theme");
-  themeSetting = (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
-
-  // Return the setting if set, or use the browser preference
-  if (themeSetting != "system") {
-    return themeSetting;
-  }
-  return browserPref ? "dark" : "light";
+  const setting = savedTheme();
+  if (setting === "dark" || setting === "light") return setting;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
 }
 
-// Set the theme on page load or when explicitly called
 function setTheme(theme) {
-  const use_theme = theme ||
-    localStorage.getItem("theme") ||
-    $("html").attr("data-theme") ||
-    browserPref;
-
-  if (use_theme === "dark") {
-    $("html").attr("data-theme", "dark");
-    $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
-  } else if (use_theme === "light") {
-    $("html").removeAttr("data-theme");
-    $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
+  const computed = theme || determineComputedTheme();
+  if (computed === "dark") document.documentElement.setAttribute("data-theme", "dark");
+  else document.documentElement.removeAttribute("data-theme");
+  const icon = document.getElementById("theme-icon");
+  if (icon) {
+    icon.classList.toggle("fa-moon", computed === "dark");
+    icon.classList.toggle("fa-sun", computed !== "dark");
   }
 }
 
-// Toggle the theme manually
 function toggleTheme() {
-  const current_theme = $("html").attr("data-theme");
-  const new_theme = current_theme === "dark" ? "light" : "dark";
-  localStorage.setItem("theme", new_theme);
-  setTheme(new_theme);
+  const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  try { localStorage.setItem("theme", theme); } catch (error) {}
+  setTheme(theme);
   redrawPlotly();
 }
 
 // Defer the loading of Mermaid to only if there is a field on the page to be rendered
 let mermaidElements = document.querySelectorAll("pre>code.language-mermaid");
 if (mermaidElements.length > 0) {
-  document.addEventListener("readystatechange", function() {
-    // Append the Mermaid module to the DOM
+  (function () {
+    // Append the Mermaid module once; this bundle runs after parsing the page
     const moduleScript = document.createElement('script');
     moduleScript.type = 'module';
     moduleScript.textContent = `
@@ -63,7 +51,7 @@ if (mermaidElements.length > 0) {
       await mermaid.run({querySelector:'code.language-mermaid'});
     `;
     document.body.appendChild(moduleScript);
-  });
+  })();
 }
 
 /* ==========================================================================
@@ -77,12 +65,7 @@ if (mermaidElements.length > 0) {
 // NOTE that plotlyDarkLayout and plotlyLightLayout will be exposed in the minimized file
 let plotlyElements = document.querySelectorAll("pre>code.language-plotly");
 if (plotlyElements.length > 0) {
-  document.addEventListener("readystatechange", function() {
-    // Return if not ready
-    if (document.readyState !== "complete") {
-      return;
-    }
-
+  (function () {
     // Prepare to load Plotly from the CDN
     const script = document.createElement('script');
     script.src = PLOTLY_URL;
@@ -112,16 +95,18 @@ if (plotlyElements.length > 0) {
 
     // Add the script to the document
     document.head.appendChild(script);
-  });
+  })();
 }
 
 function redrawPlotly() {
+  if (!window.Plotly) return;
   plotlyElements.forEach(function(elem) {
     // Parse the Plotly JSON data
     let jsonData = JSON.parse(elem.textContent);
 
     // Get the Plotly node
     let chartElement = $(elem).parent().next().get(0);
+    if (!chartElement) return;
 
     // Set the theme for the plot and render it
     const theme = (determineComputedTheme() === "dark") ? plotlyDarkLayout : plotlyLightLayout;
@@ -139,15 +124,11 @@ function redrawPlotly() {
    ========================================================================== */
 
 $(document).ready(function () {
-  // SCSS SETTINGS - These should be the same as the settings in the relevant files
-  const scssLarge = 925;          // pixels, from /_sass/_themes.scss
-  const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
-
   // If the user hasn't chosen a theme, follow the OS preference
   setTheme();
   window.matchMedia('(prefers-color-scheme: dark)')
         .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
+          if (!savedTheme() || savedTheme() === "system") {
             setTheme(e.matches ? "dark" : "light");
           }
         });
@@ -157,15 +138,22 @@ $(document).ready(function () {
 
   // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function () {
-    $(".author__urls").fadeToggle("fast", function () { });
-    $(".author__urls-wrapper button").toggleClass("open");
+    const open = this.getAttribute("aria-expanded") !== "true";
+    this.setAttribute("aria-expanded", String(open));
+    this.classList.toggle("open", open);
   });
 
-  // Restore the follow menu if toggled on a window resize
-  jQuery(window).on('resize', function () {
-    if ($('.author__urls.social-icons').css('display') == 'none' && $(window).width() >= scssLarge) {
-      $(".author__urls").css('display', 'block')
+  // CSS controls the desktop/mobile display; no inline styles survive a resize.
+  window.matchMedia('(min-width: 925px)').addEventListener('change', function () {
+    document.querySelectorAll('.author__urls-wrapper button').forEach(function (button) {
+      button.classList.remove('open');
+      button.setAttribute('aria-expanded', 'false');
+    });
+  });
+  window.addEventListener('storage', function (event) {
+    if (event.key === "theme") {
+      setTheme();
+      redrawPlotly();
     }
   });
-
 });

@@ -7,7 +7,7 @@ author_profile: false
 
 <section class="landing-hero" aria-labelledby="landing-name">
   <div class="landing-hero__portrait">
-    <img src="/images/homepage.webp" alt="Portrait of Romano Emmanuelle">
+    <img src="/images/homepage.webp" alt="Portrait of Romano Emmanuelle" width="1086" height="1448" decoding="async" fetchpriority="high">
   </div>
 
   <div class="landing-hero__intro">

@@ -1,86 +1,63 @@
-/*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
-*/
+/* Priority navigation: preserve every link, batch resize work, and support keyboards. */
+(function () {
+  'use strict';
+  var nav = document.getElementById('site-nav');
+  if (!nav) return;
+  var button = nav.querySelector('.nav-menu-toggle');
+  var visible = nav.querySelector('.visible-links');
+  var overflow = nav.querySelector('.hidden-links');
+  var scheduled = false;
 
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
-var $hlinks = $('#site-nav .hidden-links');
+  function closeMenu() {
+    overflow.classList.add('hidden');
+    button.classList.remove('close');
+    button.setAttribute('aria-expanded', 'false');
+  }
 
-var breaks = [];
-
-function updateNav() {
-
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-  // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
-
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
-      // Record the width of the list
-      breaks.push($vlinks.width());
-
-      // Move item to the hidden list
-      $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
-
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-      // Show the dropdown btn
-      $btn.removeClass("hidden");
-    }
-
-    // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
-      // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
+  function updateNav() {
+    scheduled = false;
+    // Restore source order before measuring; translated labels may change width.
+    while (overflow.firstElementChild) visible.appendChild(overflow.firstElementChild);
+    button.classList.add('hidden');
+    var available = nav.clientWidth;
+    if (visible.getBoundingClientRect().width > available) {
+      button.classList.remove('hidden');
+      available -= button.getBoundingClientRect().width + 12;
+      while (visible.getBoundingClientRect().width > available && visible.children.length > 1) {
+        var item = visible.lastElementChild;
+        if (item.classList.contains('persist')) break;
+        overflow.insertBefore(item, overflow.firstChild);
       }
-      breaks.pop();
     }
+    if (!overflow.children.length) closeMenu();
+  }
 
-    // Hide the dropdown btn if hidden list is empty
-    if (breaks.length < 1) {
-      $btn.addClass('hidden');
-      $btn.removeClass('close');
-      $hlinks.addClass('hidden');
+  function scheduleNav() {
+    if (!scheduled) {
+      scheduled = true;
+      requestAnimationFrame(updateNav);
     }
   }
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
-
-  // update masthead height and the body/sidebar top padding
-  var mastheadHeight = $('.masthead').height();
-  $('body').css('padding-top', mastheadHeight + 'px');
-  if ($(".author__urls-wrapper button").is(":visible")) {
-    $(".sidebar").css("padding-top", "");
-  } else {
-    $(".sidebar").css("padding-top", mastheadHeight + "px");
-  }
-
-}
-
-// Window listeners
-
-$(window).on('resize', function () {
+  button.addEventListener('click', function () {
+    var open = button.getAttribute('aria-expanded') !== 'true';
+    overflow.classList.toggle('hidden', !open);
+    button.classList.toggle('close', open);
+    button.setAttribute('aria-expanded', String(open));
+  });
+  nav.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      closeMenu();
+      button.focus();
+    }
+  });
+  document.addEventListener('click', function (event) {
+    if (!nav.contains(event.target)) closeMenu();
+  });
+  nav.addEventListener('focusout', function (event) {
+    if (!nav.contains(event.relatedTarget)) closeMenu();
+  });
+  window.addEventListener('resize', scheduleNav, { passive: true });
+  if (window.ResizeObserver) new ResizeObserver(scheduleNav).observe(nav);
   updateNav();
-});
-screen.orientation.addEventListener("change", function () {
-  updateNav();
-});
-
-$btn.on('click', function () {
-  $hlinks.toggleClass('hidden');
-  $(this).toggleClass('close');
-});
-
-updateNav();
+})();

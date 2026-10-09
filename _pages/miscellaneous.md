@@ -8,7 +8,7 @@ full_width: true
 
 <section class="misc-intro" aria-labelledby="running-title">
   <figure class="misc-intro__media">
-    <img src="/images/running.webp" alt="Romano Emmanuelle running outdoors" loading="lazy" width="1200" height="1800">
+    <img src="/images/running.webp" alt="Romano Emmanuelle running outdoors" loading="lazy" width="1200" height="1800" decoding="async">
   </figure>
 
   <div class="misc-intro__copy">
