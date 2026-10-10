@@ -157,38 +157,3 @@ $(document).ready(function () {
     }
   });
 });
-
-/* Native document transitions preserve real navigation, history, and page scripts.
-   Older browsers get a short fade without intercepting downloads or hash links. */
-(function () {
-  if (!document.documentElement.classList.contains('page-transitions-fallback')) return;
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let navigating = false;
-  let navigationTimer;
-  let recoveryTimer;
-  function resetTransition() {
-    navigating = false;
-    clearTimeout(navigationTimer);
-    clearTimeout(recoveryTimer);
-    document.documentElement.classList.remove('page-leaving');
-  }
-  window.addEventListener('pageshow', resetTransition);
-  document.addEventListener('click', function (event) {
-    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || reducedMotion.matches) return;
-    const link = event.target.closest('a[href]');
-    if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
-    const url = new URL(link.href, location.href);
-    if (url.origin !== location.origin || !/^https?:$/.test(url.protocol)) return;
-    if (url.pathname === location.pathname && url.search === location.search) return;
-    if (!url.pathname.endsWith('/') && !/\.html?$/.test(url.pathname)) return;
-    event.preventDefault();
-    if (navigating) return;
-    navigating = true;
-    document.documentElement.classList.add('page-leaving');
-    navigationTimer = setTimeout(function () {
-      location.assign(url.href);
-      // A cancelled/failed navigation must never leave the current page invisible.
-      recoveryTimer = setTimeout(resetTransition, 1500);
-    }, 140);
-  });
-})();

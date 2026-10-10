@@ -10,7 +10,6 @@
 
 <script>
   document.documentElement.classList.replace('no-js', 'js');
-  document.documentElement.classList.add('CSSViewTransitionRule' in window ? 'page-transitions-native' : 'page-transitions-fallback');
   // Apply the saved/system theme before the first paint, including when storage is blocked.
   var initialTheme;
   try { initialTheme = localStorage.getItem('theme'); } catch (error) {}
@@ -22,6 +21,6 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v=transitions-1">
+<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css?v=layout-6">
 <script id="site-translations" type="application/json">{{ site.data.translations | jsonify }}</script>
 <script defer src="{{ base_path }}/assets/js/language.js?v=4"></script>
