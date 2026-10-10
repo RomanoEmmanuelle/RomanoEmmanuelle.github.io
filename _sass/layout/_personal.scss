@@ -957,3 +957,57 @@ summary:focus-visible {
   #main.site-main--with-sidebar { display: block; }
   .site-main .sidebar { position: static; max-height: none; }
 }
+
+/* Soft document-to-document fades; the header remains a steady visual anchor. */
+@view-transition { navigation: auto; }
+#main { view-transition-name: page-content; }
+.masthead { view-transition-name: site-header; }
+.page__footer { view-transition-name: site-footer; }
+::view-transition-group(root),
+::view-transition-group(page-content),
+::view-transition-group(site-header),
+::view-transition-group(site-footer) { animation: none; }
+::view-transition-old(root) { animation: none; opacity: 0; }
+::view-transition-new(root),
+::view-transition-old(site-header),
+::view-transition-new(site-header),
+::view-transition-old(site-footer),
+::view-transition-new(site-footer) { animation: none; }
+::view-transition-old(page-content) {
+  animation: page-depart 180ms ease-out both;
+}
+::view-transition-new(page-content) {
+  animation: page-arrive 380ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes page-arrive {
+  from { opacity: 0; transform: translateY(8px); filter: blur(1px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@keyframes page-depart {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(-4px); }
+}
+html.page-transitions-fallback #main {
+  animation: page-arrive 360ms cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  transition: opacity 140ms ease-out, transform 140ms ease-out;
+}
+html.page-transitions-fallback.page-leaving #main {
+  opacity: 0;
+  transform: translateY(-4px);
+  animation: none;
+}
+.masthead::after {
+  background: linear-gradient(90deg, transparent, var(--global-border-color) 20%, var(--global-link-color) 48%, #65d5df 52%, var(--global-border-color) 80%, transparent);
+  box-shadow: 0 0 10px rgba(101, 213, 223, 0.18);
+  opacity: 0.65;
+}
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+  html.page-leaving #main { opacity: 1; transform: none; }
+}
+@media print {
+  html.page-leaving #main { opacity: 1; transform: none; }
+}
