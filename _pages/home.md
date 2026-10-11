@@ -21,8 +21,7 @@ author_profile: false
       <a href="https://www.chiba-u.ac.jp/">Chiba University</a>
     </p>
     <div class="landing-hero__contact">
-      <span class="landing-hero__contact-label">Email</span>
-      <p class="landing-hero__email">23sb1043[atmark]<wbr>student.gs.chiba-u[dot]<wbr>jp</p>
+      <p class="landing-hero__email">email: 23sb1043[atmark]student.gs.chiba-u[dot]jp</p>
     </div>
   </div>
 </section>
