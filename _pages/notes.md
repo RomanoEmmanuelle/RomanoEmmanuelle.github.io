@@ -22,6 +22,6 @@ full_width: true
 
 <article class="content-entry">
   <h3 class="content-entry__title">Buka Meja Season 6 - Bloom and Sisask's work on Kelley–Meka bounds for sets free of three-term arithmetic progressions</h3>
-  <p class="content-entry__action"><a href="https://drive.google.com/file/d/1FS7WNH2AYR7HdGQYhIbAEcWw0S9jE4g-/view?usp=sharing">Slide</a></p>
-  <p class="content-entry__action"><a href="https://drive.google.com/file/d/1vu4_w-Pp3o71_XQwv9dh7ZbLusX4RuUd/view?usp=sharing">Final Presentation</a></p>
+  <p class="content-entry__action"><a href="/files/buka-meja-season-6-slides.pdf">Slide</a></p>
+  <p class="content-entry__action"><a href="/files/buka-meja-season-6-final-presentation.pdf">Final Presentation</a></p>
 </article>
