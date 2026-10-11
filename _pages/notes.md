@@ -16,7 +16,7 @@ full_width: true
 <article class="content-entry">
   <h3 class="content-entry__title">Undergraduate Seminar in Commutative Algebra</h3>
   <p class="content-entry__action">
-  <a href="/files/undergraduate-seminar.pdf">Notes</a>
+  <a href="/files/Undergraduate Seminar.pdf">Notes</a>
 </p>
 </article>
 
