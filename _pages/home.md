@@ -20,5 +20,9 @@ author_profile: false
       <a href="https://www.math.s.chiba-u.ac.jp/">Department of Mathematics and Informatics</a><br>
       <a href="https://www.chiba-u.ac.jp/">Chiba University</a>
     </p>
+    <div class="landing-hero__contact">
+      <span class="landing-hero__contact-label">Email</span>
+      <p class="landing-hero__email">23sb1043[atmark]<wbr>student.gs.chiba-u[dot]<wbr>jp</p>
+    </div>
   </div>
 </section>

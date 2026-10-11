@@ -327,6 +327,29 @@
   text-decoration-thickness: 1px;
 }
 
+.landing-hero__contact {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-border-color);
+}
+
+.landing-hero__contact-label {
+  color: var(--global-text-color-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.landing-hero .landing-hero__email {
+  margin: 0.4rem 0 0;
+  color: var(--global-text-color);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
 @media (min-width: 801px) and (max-width: 1279px) {
   .landing-hero {
     grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
