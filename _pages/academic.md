@@ -58,7 +58,7 @@ author_profile: true
   <h3 class="content-entry__title">Graduation Seminar: Commutative Algebra</h3>
   <p class="content-entry__meta">Chiba University · April 2026–March 2027</p>
   <p class="content-entry__action">
-  <a href=""><s>Notes</s></a>
+   <a href="/files/Undergraduate Seminar.pdf">Notes</a>
 </p>
 </article>
 
