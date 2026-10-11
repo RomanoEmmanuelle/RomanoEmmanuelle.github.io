@@ -137,7 +137,7 @@ $(document).ready(function () {
   $('#theme-toggle').on('click', toggleTheme);
 
   // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function () {
+  $(".author__urls-wrapper > button").on("click", function () {
     const open = this.getAttribute("aria-expanded") !== "true";
     this.setAttribute("aria-expanded", String(open));
     this.classList.toggle("open", open);
@@ -145,7 +145,7 @@ $(document).ready(function () {
 
   // CSS controls the desktop/mobile display; no inline styles survive a resize.
   window.matchMedia('(min-width: 925px)').addEventListener('change', function () {
-    document.querySelectorAll('.author__urls-wrapper button').forEach(function (button) {
+    document.querySelectorAll('.author__urls-wrapper > button').forEach(function (button) {
       button.classList.remove('open');
       button.setAttribute('aria-expanded', 'false');
     });

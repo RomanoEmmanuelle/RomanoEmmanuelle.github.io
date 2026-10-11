@@ -333,6 +333,22 @@
   border-top: 1px solid var(--global-border-color);
 }
 
+.author__urls .author__email-copy {
+  display: inline-block;
+  padding: 0.4rem 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 0.9rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.author__urls .author__email-copy:hover {
+  color: var(--global-link-color);
+}
+
 .landing-hero__contact-label {
   color: var(--global-text-color-light);
   font-size: 0.75rem;

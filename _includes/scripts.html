@@ -1,4 +1,7 @@
-<script type="module" src="{{ base_path }}/assets/js/main.min.js?v=layout-6"></script>
+<script type="module" src="{{ base_path }}/assets/js/main.min.js?v=email-copy-1"></script>
+{% if page.author_profile or layout.author_profile %}
+<script defer src="{{ base_path }}/assets/js/email-copy.js"></script>
+{% endif %}
 
 {% include analytics.html %}
 
