@@ -13,10 +13,6 @@ full_width: true
 </aside>
 
 <article class="exam-problem" id="polynomial-evaluation">
-  <header class="exam-problem__header">
-    <span class="exam-problem__label">Polynomial evaluation</span>
-    <a class="exam-problem__anchor" href="#polynomial-evaluation" aria-label="Link to polynomial evaluation problem"></a>
-  </header>
   <div class="exam-problem__question">
     <p>Let <span class="exam-math exam-math--inline">\(a\)</span> be an integer. Consider a homomorphism of additive groups <span class="exam-math exam-math--inline">\(s_a:\mathbb Z[X]\to\mathbb Z\)</span> defined by</p>
     <div class="exam-math exam-math--display">\[s_a(f(X))=f(a).\]</div>
