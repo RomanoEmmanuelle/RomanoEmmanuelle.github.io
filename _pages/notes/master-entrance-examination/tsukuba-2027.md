@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Tsukuba University Problem 3"
+title: "Tsukuba University 2027 Problem 3"
 permalink: /notes/master-entrance-examination/tsukuba-2027/
 author_profile: false
 full_width: true

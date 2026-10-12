@@ -140,6 +140,10 @@
   text-underline-offset: 0.2em;
 }
 
+.exam-directory-entry + .exam-directory-entry {
+  border-top: 0;
+}
+
 .content-entry__title {
   margin: 0 0 0.35rem;
   font-size: 1.14rem;
