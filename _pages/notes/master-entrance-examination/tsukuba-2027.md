@@ -62,11 +62,23 @@ full_width: true
           <div class="exam-math exam-math--display">\[\Phi:R/\mathfrak a\times R/\mathfrak b\longrightarrow R/(\mathfrak a+\mathfrak b),\qquad(f+\mathfrak a,g+\mathfrak b)\longmapsto f-g+(\mathfrak a+\mathfrak b).\]</div>
           <div class="exam-diagram-scroll" role="group" aria-label="Commutative diagram: R maps to R modulo a times R modulo b by p, and then to R modulo a plus b by Phi. The composite is zero.">
             <div class="exam-cokernel-diagram">
+              <svg viewBox="0 0 600 220" aria-hidden="true" focusable="false">
+                <defs>
+                  <marker id="cokernel-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                    <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="currentColor" stroke-width="1.4" />
+                  </marker>
+                </defs>
+                <g fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#cokernel-arrowhead)">
+                  <path d="M 120 44 H 335" />
+                  <path d="M 450 75 V 164" />
+                  <path d="M 108 65 L 360 178" stroke-dasharray="5 5" />
+                </g>
+              </svg>
               <span class="exam-diagram-source exam-math exam-math--inline">\(R\)</span>
-              <span class="exam-diagram-top-arrow"><span class="exam-math exam-math--inline">\(p_1\times p_2\)</span><span aria-hidden="true">⟶</span></span>
+              <span class="exam-diagram-top-label exam-math exam-math--inline">\(p_1\times p_2\)</span>
               <span class="exam-diagram-product exam-math exam-math--inline">\(R/\mathfrak a\times R/\mathfrak b\)</span>
-              <span class="exam-diagram-zero"><span class="exam-math exam-math--inline">\(0\)</span><span aria-hidden="true">↘</span></span>
-              <span class="exam-diagram-down-arrow"><span aria-hidden="true">↓</span><span class="exam-math exam-math--inline">\(\Phi\)</span></span>
+              <span class="exam-diagram-zero exam-math exam-math--inline">\(0\)</span>
+              <span class="exam-diagram-phi exam-math exam-math--inline">\(\Phi\)</span>
               <span class="exam-diagram-target exam-math exam-math--inline">\(R/(\mathfrak a+\mathfrak b)\)</span>
             </div>
           </div>
