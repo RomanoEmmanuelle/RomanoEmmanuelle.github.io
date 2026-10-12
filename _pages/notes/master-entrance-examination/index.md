@@ -13,5 +13,5 @@ full_width: true
 </article>
 
 <article class="content-entry notes-entry">
-  <h3 class="content-entry__title"><a href="/notes/master-entrance-examination/tsukuba-2027/">Tsukuba University 2027</a></h3>
+  <h3 class="content-entry__title"><a href="/notes/master-entrance-examination/tsukuba-2027/">Tsukuba University Problem 3</a></h3>
 </article>
