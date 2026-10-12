@@ -14,21 +14,21 @@ full_width: true
 
 <article class="exam-problem" id="polynomial-evaluation">
   <div class="exam-problem__question">
-    <p>Let <span class="exam-math exam-math--inline">\(a\)</span> be an integer. Consider a homomorphism of additive groups <span class="exam-math exam-math--inline">\(s_a:\mathbb Z[X]\to\mathbb Z\)</span> defined by</p>
+    <p>Let <span class="exam-math exam-math--inline">\(a\)</span> be an integer. Define the homomorphism of additive groups <span class="exam-math exam-math--inline">\(s_a:\mathbb Z[X]\to\mathbb Z\)</span> defined by</p>
     <div class="exam-math exam-math--display">\[s_a(f(X))=f(a).\]</div>
     <ol>
-      <li>Find <span class="exam-math exam-math--inline">\(\ker s_a\)</span>, with a proof.</li>
+      <li>Determine <span class="exam-math exam-math--inline">\(\ker s_a\)</span> and prove your answer.</li>
       <li>For integers <span class="exam-math exam-math--inline">\(a,b\)</span>, define a homomorphism of additive groups
         <div class="exam-math exam-math--display">\[s_a\times s_b:\mathbb Z[X]\to\mathbb Z\times\mathbb Z,\qquad f(X)\mapsto(f(a),f(b)).\]</div>
         Find the necessary and sufficient condition for <span class="exam-math exam-math--inline">\(s_a\times s_b\)</span> to be surjective.
       </li>
       <li>Consider the polynomials
         <div class="exam-math exam-math--display">\[f_1(X)=X^3+1,\qquad f_2(X)=X^3+2X+1.\]</div>
-        <p>Let the natural projections be</p>
-        <div class="exam-math exam-math--display">\[p_1:\mathbb Z[X]\to\mathbb Z[X]/(f_1(X)),\qquad p_2:\mathbb Z[X]\to\mathbb Z[X]/(f_2(X)).\]</div>
-        <p>Define the homomorphism of additive groups</p>
+        <p>Let</p>
+        <div class="exam-math exam-math--display">\[p_1:\mathbb Z[X]\to\mathbb Z[X]/(f_1(X)),\qquad p_2:\mathbb Z[X]\to\mathbb Z[X]/(f_2(X))\]</div>
+        <p>be the natural projections. Define the homomorphism of additive groups</p>
         <div class="exam-math exam-math--display">\[p_1\times p_2:\mathbb Z[X]\to\mathbb Z[X]/(f_1(X))\times\mathbb Z[X]/(f_2(X))\]</div>
-        <p>by <span class="exam-math exam-math--inline">\((p_1\times p_2)(f(X))=(p_1(f(X)),p_2(f(X)))\)</span>. Find the dimension of <span class="exam-math exam-math--inline">\(\operatorname{coker}(p_1\times p_2)\)</span>. Here, for a homomorphism of additive groups <span class="exam-math exam-math--inline">\(\varphi:G\to H\)</span>, the cokernel is defined by</p>
+        <p>by <span class="exam-math exam-math--inline">\((p_1\times p_2)(f(X))=(p_1(f(X)),p_2(f(X)))\)</span>. Determine <span class="exam-math exam-math--inline">\(\operatorname{coker}(p_1\times p_2)\)</span> as an additive group and find its order. For a homomorphism of additive groups <span class="exam-math exam-math--inline">\(\varphi:G\to H\)</span>, the cokernel is defined by</p>
         <div class="exam-math exam-math--display">\[\operatorname{coker}(\varphi)=H/\operatorname{im}(\varphi).\]</div>
       </li>
     </ol>
@@ -44,13 +44,13 @@ full_width: true
           <div class="exam-math exam-math--display">\[f(X)=(X-a)Q(X)+r,\qquad Q(X)\in\mathbb Z[X],\quad r\in\mathbb Z.\]</div>
           <p>Evaluating at <span class="exam-math exam-math--inline">\(a\)</span> gives <span class="exam-math exam-math--inline">\(r=f(a)=0\)</span>. Hence <span class="exam-math exam-math--inline">\(f(X)\in(X-a)\)</span>, proving the equality.</p>
         </li>
-        <li><p>We claim that <span class="exam-math exam-math--inline">\(s_a\times s_b\)</span> is surjective if and only if <span class="exam-math exam-math--inline">\(a-b=\pm1\)</span>.</p>
+        <li><p>We prove that <span class="exam-math exam-math--inline">\(s_a\times s_b\)</span> is surjective if and only if <span class="exam-math exam-math--inline">\(a-b=\pm1\)</span>.</p>
           <p><strong>Proposition.</strong> For every <span class="exam-math exam-math--inline">\(f\in\mathbb Z[X]\)</span>, we have <span class="exam-math exam-math--inline">\(a-b\mid f(a)-f(b)\)</span>.</p>
           <p>Indeed, writing <span class="exam-math exam-math--inline">\(f(X)=k_0+k_1X+\cdots+k_nX^n\)</span>, we obtain</p>
           <div class="exam-math exam-math--display">\[f(a)-f(b)=\sum_{i=1}^n k_i(a^i-b^i).\]</div>
           <p>For every <span class="exam-math exam-math--inline">\(i\geq1\)</span>,</p>
           <div class="exam-math exam-math--display">\[a^i-b^i=(a-b)\sum_{j=0}^{i-1}a^{i-1-j}b^j,\]</div>
-          <p>which proves the proposition, including when <span class="exam-math exam-math--inline">\(a=b\)</span>.</p>
+          <p>which proves the proposition.</p>
           <p>Suppose the map is surjective. Then some <span class="exam-math exam-math--inline">\(f\in\mathbb Z[X]\)</span> maps to <span class="exam-math exam-math--inline">\((1,0)\)</span>. The proposition gives</p>
           <div class="exam-math exam-math--display">\[a-b\mid f(a)-f(b)=1.\]</div>
           <p>Thus <span class="exam-math exam-math--inline">\(a-b=\pm1\)</span>.</p>
@@ -94,7 +94,7 @@ full_width: true
           <div class="exam-math exam-math--display">\[\operatorname{coker}p=\frac{R/\mathfrak a\times R/\mathfrak b}{\operatorname{im}p}\cong R/(\mathfrak a+\mathfrak b).\]</div>
           <p>Since <span class="exam-math exam-math--inline">\(f_2-f_1=2X\)</span>,</p>
           <div class="exam-math exam-math--display">\[\mathfrak a+\mathfrak b=(X^3+1,2X)=(X^3+1,2).\]</div>
-          <p>For the last equality, <span class="exam-math exam-math--inline">\(2X\in(X^3+1,2)\)</span>, while</p>
+          <p>To justify the last equality, <span class="exam-math exam-math--inline">\(2X\in(X^3+1,2)\)</span>, while</p>
           <div class="exam-math exam-math--display">\[2=2(X^3+1)-X^2(2X)\in(X^3+1,2X).\]</div>
           <p>Reducing the coefficients modulo <span class="exam-math exam-math--inline">\(2\)</span>, we obtain</p>
           <div class="exam-math exam-math--display">\[\operatorname{coker}p\cong\mathbb F_2[X]/(X^3+1).\]</div>
@@ -102,7 +102,6 @@ full_width: true
           <div class="exam-math exam-math--display">\[\boxed{\dim_{\mathbb F_2}\operatorname{coker}(p_1\times p_2)=3.}\]</div>
           <p>As an additive group,</p>
           <div class="exam-math exam-math--display">\[\operatorname{coker}(p_1\times p_2)\cong(\mathbb Z/2\mathbb Z)^3,\qquad\boxed{\left|\operatorname{coker}(p_1\times p_2)\right|=2^3=8.}\]</div>
-          <p><strong>Terminology.</strong> An additive group alone has no specified vector-space dimension. Here the quotient is naturally an <span class="exam-math exam-math--inline">\(\mathbb F_2\)</span>-vector space, so its dimension is <span class="exam-math exam-math--inline">\(3\)</span>. If the intended question asks for the order (number of elements), the answer is <span class="exam-math exam-math--inline">\(8\)</span>. Its rank as a <span class="exam-math exam-math--inline">\(\mathbb Z\)</span>-module is <span class="exam-math exam-math--inline">\(0\)</span>.</p>
         </li>
       </ol>
     </div>
