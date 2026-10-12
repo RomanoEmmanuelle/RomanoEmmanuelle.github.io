@@ -115,35 +115,23 @@
 }
 
 .exam-cokernel-diagram {
-  position: relative;
+  display: block;
   width: 100%;
-  min-width: 32rem;
-  max-width: 40rem;
-  aspect-ratio: 600 / 220;
+  min-width: 26rem;
+  max-width: 36rem;
+  height: auto;
   margin-inline: auto;
+  color: var(--global-text-color);
 }
 
-.exam-cokernel-diagram svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  color: var(--global-text-color-light);
+.exam-diagram-math {
+  font-family: "STIX Two Math", "Cambria Math", "Times New Roman", serif;
+  font-size: 23px;
+  font-style: italic;
 }
 
-.exam-cokernel-diagram > .exam-math {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
-.exam-diagram-source { left: 10%; top: 20%; }
-.exam-diagram-top-label { left: 38%; top: 5%; }
-.exam-diagram-product { left: 75%; top: 20%; }
-.exam-diagram-zero { left: 38%; top: 48%; }
-.exam-diagram-phi { left: 81%; top: 54%; }
-.exam-diagram-target { left: 75%; top: 85%; }
+.exam-diagram-map-label { font-size: 20px; }
+.exam-diagram-zero-label { font-style: normal; }
 
 .notes-entry .content-entry__action a {
   color: var(--global-link-color);
