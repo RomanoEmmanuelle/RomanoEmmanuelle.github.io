@@ -668,9 +668,9 @@
 
 .exam-index a:hover,
 .exam-index a:focus-visible {
-  color: var(--global-bg-color);
-  background: var(--global-link-color);
-  border-color: var(--global-link-color);
+  color: var(--global-text-color);
+  background: var(--global-code-background-color);
+  border-color: var(--global-text-color-light);
 }
 
 .exam-problem {
@@ -1020,4 +1020,12 @@ summary:focus-visible {
   body { padding: 0; }
   #main.site-main--with-sidebar { display: block; }
   .site-main .sidebar { position: static; max-height: none; }
+}
+
+/* Apply the site's neutral link preference across theme components and states. */
+body a:any-link,
+body a:any-link:hover,
+body a:any-link:focus-visible {
+  color: var(--global-text-color) !important;
+  text-decoration: none !important;
 }
