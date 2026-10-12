@@ -1022,11 +1022,11 @@ summary:focus-visible {
   .site-main .sidebar { position: static; max-height: none; }
 }
 
-/* Apply the site's neutral link preference across theme components and states. */
+/* Apply the site's link preference across theme components and states. */
 body a:any-link,
 body a:any-link:hover,
 body a:any-link:focus-visible {
-  color: var(--global-text-color) !important;
+  color: var(--global-link-color) !important;
   text-decoration: none !important;
 }
 
