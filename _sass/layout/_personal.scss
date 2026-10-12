@@ -107,31 +107,12 @@
   border-top: 1px solid var(--global-border-color);
 }
 
-.exam-diagram-scroll {
-  max-width: 100%;
-  overflow-x: auto;
-  margin-block: 1.5rem;
+.exam-solution__body .exam-cokernel-diagram {
+  font-size: 1.15rem;
+  margin-block: 1.75rem;
   padding-block: 0.5rem;
+  overflow-x: auto;
 }
-
-.exam-cokernel-diagram {
-  display: block;
-  width: 100%;
-  min-width: 26rem;
-  max-width: 36rem;
-  height: auto;
-  margin-inline: auto;
-  color: var(--global-text-color);
-}
-
-.exam-diagram-math {
-  font-family: "STIX Two Math", "Cambria Math", "Times New Roman", serif;
-  font-size: 23px;
-  font-style: italic;
-}
-
-.exam-diagram-map-label { font-size: 20px; }
-.exam-diagram-zero-label { font-style: normal; }
 
 .notes-entry .content-entry__action a {
   color: var(--global-link-color);

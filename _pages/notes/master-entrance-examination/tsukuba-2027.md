@@ -60,29 +60,12 @@ full_width: true
         </li>
         <li><p>Write <span class="exam-math exam-math--inline">\(R=\mathbb Z[X]\)</span>, <span class="exam-math exam-math--inline">\(\mathfrak a=(f_1)\)</span>, <span class="exam-math exam-math--inline">\(\mathfrak b=(f_2)\)</span>, and <span class="exam-math exam-math--inline">\(p=p_1\times p_2\)</span>. Consider the homomorphism of additive groups</p>
           <div class="exam-math exam-math--display">\[\Phi:R/\mathfrak a\times R/\mathfrak b\longrightarrow R/(\mathfrak a+\mathfrak b),\qquad(f+\mathfrak a,g+\mathfrak b)\longmapsto f-g+(\mathfrak a+\mathfrak b).\]</div>
-          <div class="exam-diagram-scroll" role="group" aria-label="Commutative diagram: R maps to R modulo a times R modulo b by p, and then to R modulo a plus b by Phi. The composite is zero.">
-            <svg class="exam-cokernel-diagram" viewBox="0 0 600 200" role="img" aria-labelledby="cokernel-diagram-title cokernel-diagram-description">
-              <title id="cokernel-diagram-title">Cokernel commutative diagram</title>
-              <desc id="cokernel-diagram-description">R maps to R/a × R/b by p₁ × p₂. The difference map Φ maps R/a × R/b to R/(a+b). The diagonal map from R to R/(a+b) is zero.</desc>
-              <defs>
-                <marker id="cokernel-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
-                  <path d="M 1 1 L 9 5 L 1 9" fill="none" stroke="currentColor" stroke-width="1.4" />
-                </marker>
-              </defs>
-              <g fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#cokernel-arrowhead)">
-                <path d="M 90 45 H 330" />
-                <path d="M 445 70 V 145" />
-                <path d="M 85 65 L 360 165" stroke-dasharray="5 5" />
-              </g>
-              <g class="exam-diagram-math" fill="currentColor" text-anchor="middle" dominant-baseline="middle">
-                <text x="60" y="45">R</text>
-                <text x="445" y="45">R/𝔞 × R/𝔟</text>
-                <text x="445" y="175">R/(𝔞 + 𝔟)</text>
-                <text x="210" y="22" class="exam-diagram-map-label">p₁ × p₂</text>
-                <text x="468" y="108" class="exam-diagram-map-label">Φ</text>
-                <text x="220" y="135" class="exam-diagram-map-label exam-diagram-zero-label">0</text>
-              </g>
-            </svg>
+          <div class="exam-math exam-math--display exam-cokernel-diagram" role="group" aria-label="Commutative diagram: R maps to R modulo a times R modulo b by p1 times p2; Phi maps the product to R modulo a plus b; the diagonal map is zero.">
+            \[\begin{array}{ccc}
+              R &amp; \xrightarrow{\quad p_1\times p_2\quad} &amp; R/\mathfrak a\times R/\mathfrak b \\[0.7em]
+              &amp; \searrow\!{\scriptstyle 0} &amp; \Big\downarrow\!{\scriptstyle\Phi} \\[0.7em]
+              &amp; &amp; R/(\mathfrak a+\mathfrak b)
+            \end{array}\]
           </div>
           <p>The diagonal map is zero: <span class="exam-math exam-math--inline">\(\Phi\circ(p_1\times p_2)=0\)</span>.</p>
           <p>It is well defined: if <span class="exam-math exam-math--inline">\(f-f'\in\mathfrak a\)</span> and <span class="exam-math exam-math--inline">\(g-g'\in\mathfrak b\)</span>, then</p>
