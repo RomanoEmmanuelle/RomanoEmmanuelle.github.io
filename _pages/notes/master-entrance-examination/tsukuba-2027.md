@@ -64,6 +64,17 @@ full_width: true
         </li>
         <li><p>Write <span class="exam-math exam-math--inline">\(R=\mathbb Z[X]\)</span>, <span class="exam-math exam-math--inline">\(\mathfrak a=(f_1)\)</span>, <span class="exam-math exam-math--inline">\(\mathfrak b=(f_2)\)</span>, and <span class="exam-math exam-math--inline">\(p=p_1\times p_2\)</span>. Consider the homomorphism of additive groups</p>
           <div class="exam-math exam-math--display">\[\Phi:R/\mathfrak a\times R/\mathfrak b\longrightarrow R/(\mathfrak a+\mathfrak b),\qquad(f+\mathfrak a,g+\mathfrak b)\longmapsto f-g+(\mathfrak a+\mathfrak b).\]</div>
+          <div class="exam-diagram-scroll" role="group" aria-label="Commutative diagram: R maps to R modulo a times R modulo b by p, and then to R modulo a plus b by Phi. The composite is zero.">
+            <div class="exam-cokernel-diagram">
+              <span class="exam-diagram-source exam-math exam-math--inline">\(R\)</span>
+              <span class="exam-diagram-top-arrow"><span class="exam-math exam-math--inline">\(p_1\times p_2\)</span><span aria-hidden="true">⟶</span></span>
+              <span class="exam-diagram-product exam-math exam-math--inline">\(R/\mathfrak a\times R/\mathfrak b\)</span>
+              <span class="exam-diagram-zero"><span class="exam-math exam-math--inline">\(0\)</span><span aria-hidden="true">↘</span></span>
+              <span class="exam-diagram-down-arrow"><span aria-hidden="true">↓</span><span class="exam-math exam-math--inline">\(\Phi\)</span></span>
+              <span class="exam-diagram-target exam-math exam-math--inline">\(R/(\mathfrak a+\mathfrak b)\)</span>
+            </div>
+          </div>
+          <p>The diagonal map is zero: <span class="exam-math exam-math--inline">\(\Phi\circ(p_1\times p_2)=0\)</span>.</p>
           <p>It is well defined: if <span class="exam-math exam-math--inline">\(f-f'\in\mathfrak a\)</span> and <span class="exam-math exam-math--inline">\(g-g'\in\mathfrak b\)</span>, then</p>
           <div class="exam-math exam-math--display">\[(f-g)-(f'-g')=(f-f')-(g-g')\in\mathfrak a+\mathfrak b.\]</div>
           <p>It is surjective, since <span class="exam-math exam-math--inline">\(\Phi(h+\mathfrak a,0+\mathfrak b)=h+(\mathfrak a+\mathfrak b)\)</span> for every <span class="exam-math exam-math--inline">\(h\in R\)</span>.</p>
