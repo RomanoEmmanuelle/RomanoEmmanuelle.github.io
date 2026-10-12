@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Chiba University 2027 Mathematics Entrance Examination"
+title: "Chiba University 2027"
 permalink: /notes/master-entrance-examination/chiba-2027/
 redirect_from:
   - /notes/chiba-2027/
