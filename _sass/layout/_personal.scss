@@ -122,6 +122,13 @@
   margin-inline: auto;
 }
 
+.academic-content a:not(.advisor-link),
+.academic-content a:not(.advisor-link):hover,
+.academic-content a:not(.advisor-link):focus-visible {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
 .notes-entry .content-entry__action a {
   color: var(--global-link-color);
   text-decoration: underline;
