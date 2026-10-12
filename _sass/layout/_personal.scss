@@ -107,6 +107,18 @@
   border-top: 1px solid var(--global-border-color);
 }
 
+.notes-entry .content-entry__action a {
+  color: var(--global-text-color-light);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.notes-entry .content-entry__action a:hover,
+.notes-entry .content-entry__action a:focus-visible {
+  color: var(--global-link-color);
+}
+
 .content-entry__title {
   margin: 0 0 0.35rem;
   font-size: 1.14rem;
