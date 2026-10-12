@@ -9,8 +9,7 @@ full_width: true
 ## Mathematics notes
 
 <article class="content-entry">
-  <h3 class="content-entry__title">Chiba University 2027 Master Program Mathematics Entrance Examination</h3>
-  <p class="content-entry__action"><a href="/notes/chiba-2027/">Problems and solutions</a></p>
+  <h3 class="content-entry__title"><a href="/notes/master-entrance-examination/">Master Entrance Examination</a></h3>
 </article>
 
 <article class="content-entry">

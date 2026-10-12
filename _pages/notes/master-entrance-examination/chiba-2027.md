@@ -1,10 +1,14 @@
 ---
 layout: archive
 title: "Chiba University 2027 Mathematics Entrance Examination"
-permalink: /notes/chiba-2027/
+permalink: /notes/master-entrance-examination/chiba-2027/
+redirect_from:
+  - /notes/chiba-2027/
 author_profile: false
 full_width: true
 ---
+
+<p><a href="/notes/master-entrance-examination/">&larr; Master Entrance Examination</a></p>
 
 <aside class="exam-disclaimer" aria-label="Disclaimer">
   <strong>Disclaimer.</strong> The solutions provided here are not official solutions, and the English translation of the questions is not an official translation. Both may contain errors.
