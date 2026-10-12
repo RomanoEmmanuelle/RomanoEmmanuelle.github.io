@@ -830,7 +830,11 @@
 }
 
 /* Shared shell: keep the profile and reading column aligned without fixed floats. */
-html { font-size: 14px; }
+html {
+  font-size: 14px;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
   transition-property: color, background-color, border-color, box-shadow;
 }
@@ -958,10 +962,10 @@ summary:focus-visible {
   }
   .site-main .sidebar {
     position: sticky;
-    top: 6rem;
-    max-height: calc(100svh - 7rem);
+    top: calc(var(--site-header-height, 4rem) + clamp(1.75rem, 4vw, 3.5rem));
+    max-height: calc(100svh - var(--site-header-height, 4rem) - clamp(1.75rem, 4vw, 3.5rem) - 1rem);
     overflow-y: auto;
-    margin-bottom: 0;
+    margin: 0;
     padding-right: 0.5rem;
   }
   .site-main .page__related { grid-column: 2; margin-left: 0; }
