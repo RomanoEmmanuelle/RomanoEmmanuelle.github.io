@@ -14,7 +14,7 @@ full_width: true
 
 <article class="exam-problem" id="polynomial-evaluation">
   <div class="exam-problem__question">
-    <p>Let <span class="exam-math exam-math--inline">\(a\)</span> be an integer. Define the homomorphism of additive groups <span class="exam-math exam-math--inline">\(s_a:\mathbb Z[X]\to\mathbb Z\)</span> defined by</p>
+    <p>Let <span class="exam-math exam-math--inline">\(a\)</span> be an integer. Consider the homomorphism of additive groups <span class="exam-math exam-math--inline">\(s_a:\mathbb Z[X]\to\mathbb Z\)</span> defined by</p>
     <div class="exam-math exam-math--display">\[s_a(f(X))=f(a).\]</div>
     <ol>
       <li>Determine <span class="exam-math exam-math--inline">\(\ker s_a\)</span> and prove your answer.</li>
