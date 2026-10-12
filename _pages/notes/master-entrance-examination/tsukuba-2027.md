@@ -60,12 +60,8 @@ full_width: true
         </li>
         <li><p>Write <span class="exam-math exam-math--inline">\(R=\mathbb Z[X]\)</span>, <span class="exam-math exam-math--inline">\(\mathfrak a=(f_1)\)</span>, <span class="exam-math exam-math--inline">\(\mathfrak b=(f_2)\)</span>, and <span class="exam-math exam-math--inline">\(p=p_1\times p_2\)</span>. Consider the homomorphism of additive groups</p>
           <div class="exam-math exam-math--display">\[\Phi:R/\mathfrak a\times R/\mathfrak b\longrightarrow R/(\mathfrak a+\mathfrak b),\qquad(f+\mathfrak a,g+\mathfrak b)\longmapsto f-g+(\mathfrak a+\mathfrak b).\]</div>
-          <div class="exam-math exam-math--display exam-cokernel-diagram" role="group" aria-label="Commutative diagram: R maps to R modulo a times R modulo b by p1 times p2; Phi maps the product to R modulo a plus b; the diagonal map is zero.">
-            \[\begin{array}{ccc}
-              R &amp; \xrightarrow{\quad p_1\times p_2\quad} &amp; R/\mathfrak a\times R/\mathfrak b \\[0.7em]
-              &amp; \searrow\!{\scriptstyle 0} &amp; \Big\downarrow\!{\scriptstyle\Phi} \\[0.7em]
-              &amp; &amp; R/(\mathfrak a+\mathfrak b)
-            \end{array}\]
+          <div class="exam-tikz-diagram">
+            {% include diagrams/tsukuba-cokernel.svg %}
           </div>
           <p>The diagonal map is zero: <span class="exam-math exam-math--inline">\(\Phi\circ(p_1\times p_2)=0\)</span>.</p>
           <p>It is well defined: if <span class="exam-math exam-math--inline">\(f-f'\in\mathfrak a\)</span> and <span class="exam-math exam-math--inline">\(g-g'\in\mathfrak b\)</span>, then</p>

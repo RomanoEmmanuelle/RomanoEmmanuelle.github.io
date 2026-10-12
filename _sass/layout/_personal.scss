@@ -107,11 +107,19 @@
   border-top: 1px solid var(--global-border-color);
 }
 
-.exam-solution__body .exam-cokernel-diagram {
-  font-size: 1.15rem;
-  margin-block: 1.75rem;
-  padding-block: 0.5rem;
-  overflow-x: auto;
+.exam-tikz-diagram {
+  margin: 1.75rem auto;
+  max-width: 100%;
+  text-align: center;
+  color: var(--global-text-color);
+}
+
+.exam-tikz-diagram .exam-tikz-svg {
+  display: block;
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
 }
 
 .notes-entry .content-entry__action a {
