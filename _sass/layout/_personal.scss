@@ -1029,3 +1029,7 @@ body a:any-link:focus-visible {
   color: var(--global-text-color) !important;
   text-decoration: none !important;
 }
+
+.greedy-nav .visible-links a::before {
+  display: none;
+}
