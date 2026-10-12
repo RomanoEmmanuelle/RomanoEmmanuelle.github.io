@@ -136,15 +136,10 @@
 .exam-diagram-down-arrow > span:first-child { font-size: 2rem; line-height: 1; }
 
 .notes-entry .content-entry__action a {
-  color: var(--global-text-color-light);
+  color: var(--global-link-color);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
-}
-
-.notes-entry .content-entry__action a:hover,
-.notes-entry .content-entry__action a:focus-visible {
-  color: var(--global-link-color);
 }
 
 .content-entry__title {

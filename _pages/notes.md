@@ -10,7 +10,7 @@ full_width: true
 
 <article class="content-entry notes-entry">
   <h3 class="content-entry__title">Master Entrance Examination</h3>
-  <p class="content-entry__action"><a href="/notes/master-entrance-examination/">Browse examinations</a></p>
+  <p class="content-entry__action"><a href="/notes/master-entrance-examination/">Examinations</a></p>
 </article>
 
 <article class="content-entry notes-entry">
