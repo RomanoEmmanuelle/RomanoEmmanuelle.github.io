@@ -12,5 +12,5 @@ redirect_from:
 ## Current Research interests
 - Commutative Algebra
 - Combinatorial Commutative Algebra : Toric Rings and SAGBI Bases
-- Grassmannians, Matching Fields, and Toric Degenerations
+- Grassmannians, Plücker Algebras, Matching Fields, and Toric Degenerations
 

@@ -7,7 +7,7 @@ author_profile: true
 
 My interests center on commutative algebra and related questions in algebraic combinatorics, alongside analytic and number-theoretic methods.
 
-In particular, I am interested in toric rings, SAGBI bases, Grassmannians, matching fields, and toric degenerations.
+In particular, I am interested in toric rings, SAGBI bases, Grassmannians, Plücker algebras, matching fields, and toric degenerations.
 
 ## Graduation Seminar: Commutative Algebra
 
