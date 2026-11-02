@@ -19,7 +19,7 @@ html[data-theme="dark"] {
   --global-bg-color: #181917;
   --global-footer-bg-color: #181917;
   --global-text-color: #e9e7e1;
-  --global-text-color-light: #aaaDA4;
+  --global-text-color-light: #aaada4;
   --global-border-color: #353831;
   --global-dark-border-color: #62675c;
   --global-code-background-color: #22251f;
@@ -106,6 +106,7 @@ body {
 .landing-hero__name { font-size: clamp(2.5rem, 3.8vw, 3.5rem); line-height: 1.15; }
 .landing-hero__name span { display: inline; }
 .landing-hero__name-accent { color: var(--global-text-color); }
+.landing-hero__intro { text-align: left; }
 .landing-hero .landing-hero__role {
   font-size: 1rem;
   line-height: 1.6;
