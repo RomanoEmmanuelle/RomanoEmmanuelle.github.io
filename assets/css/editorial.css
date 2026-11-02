@@ -1,8 +1,8 @@
 /* A quieter typographic layer for the personal academic website. */
 :root {
   --editorial-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --global-bg-color: #faf9f6;
-  --global-footer-bg-color: #faf9f6;
+  --global-bg-color: #fff;
+  --global-footer-bg-color: #fff;
   --global-text-color: #292b28;
   --global-text-color-light: #666962;
   --global-border-color: #dedfd8;
@@ -16,8 +16,8 @@
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #181917;
-  --global-footer-bg-color: #181917;
+  --global-bg-color: #17110d;
+  --global-footer-bg-color: #17110d;
   --global-text-color: #e9e7e1;
   --global-text-color-light: #aaada4;
   --global-border-color: #353831;
