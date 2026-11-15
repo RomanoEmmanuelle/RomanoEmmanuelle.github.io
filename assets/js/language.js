@@ -32,8 +32,8 @@
   function applyLanguage(language) {
     var japanese = language === 'ja';
     document.documentElement.lang = japanese ? 'ja' : 'en';
-    control.textContent = japanese ? '日本語' : 'EN';
-    control.lang = japanese ? 'ja' : 'en';
+    control.textContent = japanese ? 'EN' : '日本語';
+    control.lang = japanese ? 'en' : 'ja';
     control.setAttribute('aria-label', japanese ? 'Switch to English' : 'Switch to Japanese');
     control.title = japanese ? 'Switch to English' : 'Switch to Japanese';
     document.querySelectorAll('[data-language]').forEach(function (element) {
