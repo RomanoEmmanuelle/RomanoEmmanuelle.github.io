@@ -2,9 +2,8 @@
 .running-year__heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1rem; margin-bottom: 1.3rem; }
 .running-year__heading h2 { margin: 0; font-size: 1.65rem; }
 .running-year__heading p { margin: 0; font-size: 0.78rem; color: var(--global-text-color-light); }
-.running-year__stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin: 0; }
-.running-year__stats dt { font-size: 0.85rem; font-weight: 400; color: var(--global-text-color-light); margin-bottom: 0.5rem; min-height: 2.6rem; }
-.running-year__stats dt small { display: block; font-size: 0.72rem; }
+.running-year__stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin: 0; }
+.running-year__stats dt { font-size: 0.85rem; font-weight: 400; color: var(--global-text-color-light); margin-bottom: 0.5rem; }
 .running-year__stats dd { margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 500; font-variant-numeric: tabular-nums; line-height: 1.4; }
 .running-year__stats dd span { font-size: 0.8rem; font-weight: 400; }
 @media (max-width: 480px) {

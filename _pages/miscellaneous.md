@@ -7,9 +7,9 @@ full_width: true
 recent_race: true
 ---
 
-{% include running-year.html %}
-
 {% include recent-race.html %}
+
+{% include running-year.html %}
 
 ## Personal bests
 
