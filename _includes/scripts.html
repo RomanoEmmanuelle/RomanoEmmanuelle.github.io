@@ -3,6 +3,9 @@
 <script defer src="{{ base_path }}/assets/js/email-copy.js"></script>
 <script defer src="{{ base_path }}/assets/js/profile-position.js"></script>
 {% endif %}
+{% if page.recent_race %}
+<script defer src="{{ base_path }}/assets/js/recent-race.js?v=1"></script>
+{% endif %}
 
 {% include analytics.html %}
 

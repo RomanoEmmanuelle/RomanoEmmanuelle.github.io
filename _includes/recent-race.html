@@ -1,0 +1,42 @@
+{% assign race = site.data.recent_race %}
+<section class="recent-race" aria-labelledby="running-title" data-run-src="{{ base_path }}/assets/data/recent-race.json">
+  <div class="misc-intro misc-intro--race">
+    <figure class="misc-intro__media">
+      <img src="/images/running.webp" alt="Romano Emmanuelle running outdoors" loading="lazy" width="1200" height="1800" decoding="async">
+    </figure>
+    <div class="misc-intro__copy">
+      <h2 id="running-title">Recent race</h2>
+      <h3 class="recent-race__name">{{ race.title }}</h3>
+      <p class="recent-race__category">{{ race.category }}</p>
+      <p class="recent-race__date"><time datetime="{{ race.date }}">{{ race.date_label }}</time> · Bandung, Indonesia</p>
+      <dl class="recent-race__stats">
+        <div><dt>Distance</dt><dd>{{ race.distance_km }} <span>km</span></dd></div>
+        <div><dt>Elapsed time</dt><dd>{{ race.elapsed }}</dd></div>
+        <div><dt>Avg. pace</dt><dd>{{ race.pace }}<span>/km</span></dd></div>
+        <div><dt>Elevation gain</dt><dd>{{ race.gain_m }} <span>m</span></dd></div>
+        <div><dt>Elevation loss</dt><dd>{{ race.loss_m }} <span>m</span></dd></div>
+        <div><dt>Altitude range</dt><dd>{{ race.minimum_m }}–{{ race.maximum_m }} <span>m</span></dd></div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="recent-race__map-heading">
+    <h3>Route</h3>
+    <button type="button" class="recent-race__reset" hidden>Show full route</button>
+  </div>
+  <div id="recent-race-map" class="recent-race__map" role="region" aria-label="Interactive race route map">
+    <img class="recent-race__fallback" src="{{ base_path }}/images/runs/pocari-bandung-2026-route.svg" alt="Breadcrumb route of the Pocari Sweat Run Bandung 2026" width="720" height="360" loading="lazy">
+  </div>
+  <p class="recent-race__legend"><span class="recent-race__start-key">Start</span><span class="recent-race__finish-key">Finish</span></p>
+
+  <figure class="recent-race__elevation" aria-labelledby="elevation-title">
+    <div class="recent-race__chart-heading">
+      <figcaption id="elevation-title">Elevation profile</figcaption>
+      <output id="elevation-readout" aria-live="off"></output>
+    </div>
+    <svg id="recent-race-elevation" role="img" aria-label="Elevation along the race route, between 709 and 782 metres" tabindex="0"></svg>
+    <p class="recent-race__chart-help">Hover, drag, or use the arrow keys to follow the route.</p>
+    <noscript><p>Enable JavaScript to explore the interactive map and elevation profile.</p></noscript>
+  </figure>
+  <p class="recent-race__source">Calculated from the GPX track; distance and elevation may differ slightly from the race course or watch summary.</p>
+</section>
