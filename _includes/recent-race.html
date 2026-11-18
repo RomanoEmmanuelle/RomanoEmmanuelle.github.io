@@ -1,11 +1,11 @@
 {% assign race = site.data.recent_race %}
-<section class="recent-race" aria-labelledby="running-title" data-run-src="{{ base_path }}/assets/data/recent-race.json">
+<section class="recent-race misc-section" aria-labelledby="running-title" data-run-src="{{ base_path }}/assets/data/recent-race.json">
+  <h2 id="running-title">Recent race</h2>
   <div class="misc-intro misc-intro--race">
     <figure class="misc-intro__media">
       <img src="/images/running.webp" alt="Romano Emmanuelle running outdoors" loading="lazy" width="1200" height="1800" decoding="async">
     </figure>
     <div class="misc-intro__copy">
-      <h2 id="running-title">Recent race</h2>
       <h3 class="recent-race__name">{{ race.title }}</h3>
       <p class="recent-race__category">{{ race.category }}</p>
       <p class="recent-race__date"><time datetime="{{ race.date }}">{{ race.date_label }}</time> · Bandung, Indonesia</p>

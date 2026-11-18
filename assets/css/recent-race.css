@@ -1,6 +1,32 @@
-.running-year { max-width: 56rem; margin: 0 0 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--global-border-color); }
+.miscellaneous-page { max-width: 56rem; }
+.miscellaneous-page .misc-section { margin: 0; }
+.miscellaneous-page .misc-section + .misc-section { margin-top: 3.5rem; }
+.miscellaneous-page .misc-section h2 { margin: 0 0 1.5rem; padding: 0; border: 0; font-family: var(--editorial-font); font-size: 1.4rem; font-weight: 500; line-height: 1.3; letter-spacing: -0.02em; }
+.miscellaneous-page .running-year__heading h2 { margin-bottom: 0; }
+.miscellaneous-page .running-records { display: block; }
+.miscellaneous-page .running-record { display: grid; grid-template-columns: 8rem 8rem minmax(0, 1fr) 12rem; gap: 1.5rem; align-items: center; padding: 1.25rem 0; border: 0; border-bottom: 1px solid var(--global-border-color); }
+.miscellaneous-page .running-record:first-child { border-top: 1px solid var(--global-border-color); }
+.miscellaneous-page .running-record__distance { margin: 0; font-size: 0.9rem; line-height: 1.5; text-transform: none; letter-spacing: 0; color: var(--global-text-color); }
+.miscellaneous-page .running-record__time { margin: 0; font-size: 1.55rem; line-height: 1.3; font-variant-numeric: tabular-nums; }
+.miscellaneous-page .running-record__event { margin: 0; font-size: 0.8rem; color: var(--global-text-color-light); }
+.miscellaneous-page .running-record__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; border: 0; padding: 0; }
+.miscellaneous-page .running-record__stats dt { font-size: 0.72rem; }
+.miscellaneous-page .running-record__stats dd { font-size: 0.85rem; }
+.miscellaneous-page .recent-race__name { margin-top: 0; font-size: 1.2rem; font-weight: 500; }
+@media (max-width: 850px) {
+  .miscellaneous-page .running-record { grid-template-columns: 8rem 8rem minmax(0, 1fr); gap: 0.75rem 1.5rem; }
+  .miscellaneous-page .running-record__event { grid-column: 1 / 3; grid-row: 2; }
+  .miscellaneous-page .running-record__stats { grid-column: 3; grid-row: 1 / 3; }
+}
+@media (max-width: 540px) {
+  .miscellaneous-page .misc-section + .misc-section { margin-top: 2.75rem; }
+  .miscellaneous-page .running-record { grid-template-columns: minmax(0, 1fr) auto; gap: 0.6rem 1rem; }
+  .miscellaneous-page .running-record__event { grid-column: 1 / -1; grid-row: auto; }
+  .miscellaneous-page .running-record__stats { grid-column: 1 / -1; grid-row: auto; max-width: 16rem; margin-top: 0.35rem; }
+}
+.running-year { margin: 0; }
 .running-year__heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1rem; margin-bottom: 1.3rem; }
-.running-year__heading h2 { margin: 0; font-size: 1.65rem; }
+.running-year__heading h2 { margin: 0; }
 .running-year__heading p { margin: 0; font-size: 0.78rem; color: var(--global-text-color-light); }
 .running-year__stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin: 0; }
 .running-year__stats dt { font-size: 0.85rem; font-weight: 400; color: var(--global-text-color-light); margin-bottom: 0.5rem; }
@@ -12,11 +38,10 @@
   .running-year__stats dt { margin: 0; min-height: 0; }
   .running-year__stats dd { white-space: nowrap; }
 }
-.recent-race { max-width: 56rem; margin-bottom: 3rem; }
-.recent-race .misc-intro--race { grid-template-columns: 18rem minmax(0, 1fr); align-items: center; gap: 2.5rem; margin-bottom: 2rem; }
+.recent-race { margin-bottom: 0; }
+.recent-race .misc-intro--race { grid-template-columns: 18rem minmax(0, 1fr); align-items: start; gap: 2.5rem; margin-bottom: 2rem; }
 .recent-race .misc-intro__media img { aspect-ratio: 3 / 4; object-fit: cover; }
-.recent-race .misc-intro__copy h2 { font-size: 1.65rem; margin-bottom: 1.1rem; }
-.recent-race__name { font-size: 1.22rem; font-weight: 600; line-height: 1.5; margin: 0 0 0.2rem; }
+.recent-race__name { font-size: 1.22rem; font-weight: 600; line-height: 1.5; margin: 0 0 0.35rem; }
 .recent-race .recent-race__category { margin: 0; font-size: 0.98rem; }
 .recent-race .recent-race__date { margin: 0.4rem 0 1.3rem; font-size: 0.83rem; color: var(--global-text-color-light); }
 .recent-race__stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem 1rem; margin: 0; }
@@ -39,7 +64,6 @@
 .recent-race__elevation { margin: 0; }
 .recent-race__chart-heading output { font-size: 0.8rem; color: var(--global-text-color-light); font-variant-numeric: tabular-nums; }
 #recent-race-elevation { display: block; width: 100%; height: 190px; overflow: visible; touch-action: pan-y; cursor: crosshair; }
-.running-record__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 640px) {
   .recent-race .misc-intro--race { grid-template-columns: 1fr; gap: 1.5rem; }
   .recent-race .misc-intro__media { width: 15rem; max-width: 100%; }

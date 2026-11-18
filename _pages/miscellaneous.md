@@ -5,13 +5,13 @@ permalink: /miscellaneous/
 author_profile: false
 full_width: true
 recent_race: true
+content_class: miscellaneous-page
 ---
-
-{% include recent-race.html %}
 
 {% include running-year.html %}
 
-## Personal bests
+<section class="misc-section personal-bests" aria-labelledby="personal-bests">
+<h2 id="personal-bests">Personal bests</h2>
 
 <div class="running-records">
   <article class="running-record">
@@ -55,6 +55,13 @@ recent_race: true
   </article>
 </div>
 
-## Triathlon
+</section>
+
+{% include recent-race.html %}
+
+<section class="misc-section" aria-labelledby="triathlon">
+<h2 id="triathlon">Triathlon</h2>
 
 <p class="misc-triathlon">After completing my first full marathon in April 2026, I plan to sign up for an IRONMAN 70.3 triathlon in the near future. Once I have invested in a decent bike, the biggest investment I will need is simply enough time to exercise.</p>
+
+</section>
