@@ -11,6 +11,7 @@
 .recent-race__stats dd span { font-size: 0.78rem; font-weight: 400; }
 .recent-race__map-heading, .recent-race__chart-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.75rem; }
 .recent-race__map-heading h3, .recent-race__elevation figcaption { margin: 0; font-size: 0.98rem; font-weight: 500; }
+.recent-race__elevation figcaption, #recent-race-elevation text { font-family: var(--editorial-font); }
 .recent-race__reset { border: 0; padding: 0.4rem 0; color: var(--global-link-color); background: transparent; font: inherit; font-size: 0.8rem; cursor: pointer; }
 .recent-race__map { width: 100%; height: 25rem; min-height: 300px; border: 1px solid var(--global-border-color); border-radius: 3px; background: var(--global-code-background-color); overflow: hidden; isolation: isolate; z-index: 0; }
 .recent-race__map .recent-race__fallback { display: block; width: 100%; height: 100%; object-fit: contain; }
