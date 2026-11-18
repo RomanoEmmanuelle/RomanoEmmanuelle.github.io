@@ -14,7 +14,7 @@
         <div><dt>Elapsed time</dt><dd>{{ race.elapsed }}</dd></div>
         <div><dt>Avg. pace</dt><dd>{{ race.pace }}<span>/km</span></dd></div>
         <div><dt>Elevation gain</dt><dd>{{ race.gain_m }} <span>m</span></dd></div>
-        <div><dt>Elevation loss</dt><dd>{{ race.loss_m }} <span>m</span></dd></div>
+        <div><dt>RPE</dt><dd>{{ race.rpe }}</dd></div>
         <div><dt>Altitude range</dt><dd>{{ race.minimum_m }}–{{ race.maximum_m }} <span>m</span></dd></div>
       </dl>
     </div>
@@ -22,7 +22,7 @@
 
   <div class="recent-race__map-heading">
     <h3>Route</h3>
-    <button type="button" class="recent-race__reset" hidden>Show full route</button>
+    <button type="button" class="recent-race__reset" hidden>Reset to default</button>
   </div>
   <div id="recent-race-map" class="recent-race__map" role="region" aria-label="Interactive race route map">
     <img class="recent-race__fallback" src="{{ base_path }}/images/runs/pocari-bandung-2026-route.svg" alt="Breadcrumb route of the Pocari Sweat Run Bandung 2026" width="720" height="360" loading="lazy">
@@ -35,8 +35,6 @@
       <output id="elevation-readout" aria-live="off"></output>
     </figcaption>
     <svg id="recent-race-elevation" role="img" aria-label="Elevation along the race route, between 709 and 782 metres" tabindex="0"></svg>
-    <p class="recent-race__chart-help">Hover, drag, or use the arrow keys to follow the route.</p>
     <noscript><p>Enable JavaScript to explore the interactive map and elevation profile.</p></noscript>
   </figure>
-  <p class="recent-race__source">Calculated from the GPX track; distance and elevation may differ slightly from the race course or watch summary.</p>
 </section>

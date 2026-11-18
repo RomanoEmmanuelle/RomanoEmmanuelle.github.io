@@ -1,5 +1,5 @@
 .recent-race { max-width: 56rem; margin-bottom: 3rem; }
-.recent-race .misc-intro--race { grid-template-columns: 13rem minmax(0, 1fr); gap: 2.5rem; margin-bottom: 2rem; }
+.recent-race .misc-intro--race { grid-template-columns: 18rem minmax(0, 1fr); align-items: center; gap: 2.5rem; margin-bottom: 2rem; }
 .recent-race .misc-intro__media img { aspect-ratio: 3 / 4; object-fit: cover; }
 .recent-race .misc-intro__copy h2 { font-size: 1.65rem; margin-bottom: 1.1rem; }
 .recent-race__name { font-size: 1.22rem; font-weight: 600; line-height: 1.5; margin: 0 0 0.2rem; }
@@ -25,12 +25,10 @@
 .recent-race__elevation { margin: 0; }
 .recent-race__chart-heading output { font-size: 0.8rem; color: var(--global-text-color-light); font-variant-numeric: tabular-nums; }
 #recent-race-elevation { display: block; width: 100%; height: 190px; overflow: visible; touch-action: pan-y; cursor: crosshair; }
-.recent-race__chart-help, .recent-race__source { font-size: 0.76rem; color: var(--global-text-color-light); line-height: 1.65; margin: 0.6rem 0 0; }
-.recent-race__source { margin-top: 1.2rem; }
 .running-record__stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 640px) {
   .recent-race .misc-intro--race { grid-template-columns: 1fr; gap: 1.5rem; }
-  .recent-race .misc-intro__media { width: 10rem; }
+  .recent-race .misc-intro__media { width: 15rem; max-width: 100%; }
   .recent-race__stats { gap: 1rem 0.5rem; }
   .recent-race__stats dd { font-size: 1.2rem; }
   .recent-race__map { height: 23rem; }

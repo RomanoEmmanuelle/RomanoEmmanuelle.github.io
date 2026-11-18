@@ -22,10 +22,10 @@ def duration(seconds):
     return f"{hours}:{minutes:02d}:{seconds:02d}"
 
 
-def build(source):
+def build(source, rpe):
     root = ET.parse(source).getroot()
     points = []
-    length = gain = loss = 0.0
+    length = gain = 0.0
     for segment in root.findall(".//g:trkseg", NS):
         previous = None
         for node in segment.findall("g:trkpt", NS):
@@ -35,7 +35,6 @@ def build(source):
                 length += distance(previous, point)
                 change = point[2] - previous[2]
                 gain += max(change, 0)
-                loss += max(-change, 0)
             points.append((*point, length / 1000, stamp))
             previous = point
     if not points:
@@ -52,7 +51,7 @@ def build(source):
         "elapsed": duration(seconds),
         "pace": f"{pace // 60}:{pace % 60:02d}",
         "gain_m": round(gain),
-        "loss_m": round(loss),
+        "rpe": rpe,
         "minimum_m": round(min(p[2] for p in points)),
         "maximum_m": round(max(p[2] for p in points)),
     }
@@ -90,4 +89,6 @@ def build(source):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("source", type=Path)
-    build(parser.parse_args().source)
+    parser.add_argument("--rpe", required=True, help="Self-reported effort, e.g. 7/10")
+    args = parser.parse_args()
+    build(args.source, args.rpe)
