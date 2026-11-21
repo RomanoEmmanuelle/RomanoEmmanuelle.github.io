@@ -14,3 +14,5 @@ redirect_from:
 - Combinatorial Commutative Algebra : Toric Rings and SAGBI Bases
 - Grassmannians, Plücker Algebras, Matching Fields, and Toric Degenerations
 
+{% include page-quote.html text="I loved every minute of it, however hard it had been" author="Andrew Wiles" %}
+

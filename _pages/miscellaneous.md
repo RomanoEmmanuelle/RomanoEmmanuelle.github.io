@@ -65,3 +65,5 @@ content_class: miscellaneous-page
 <p class="misc-triathlon">After completing my first full marathon in April 2026, I plan to sign up for an IRONMAN 70.3 triathlon in the near future. Once I have invested in a decent bike, the biggest investment I will need is simply enough time to exercise.</p>
 
 </section>
+
+{% include page-quote.html text="How we spend our days is, of course, how we spend our lives." author="Annie Dillard" %}

@@ -98,3 +98,5 @@ content_class: academic-content
   <li><strong>MEXT Scholarship Program</strong>, December 2021 - selected as one of six awardees from thousands of applicants</li>
   <li><strong>Dean's List</strong>, Bandung Institute of Technology, first semester of 2021–2022</li>
 </ul>
+
+{% include page-quote.html text="Sometimes we are so attached to what our dreams are supposed to look like that we fail to realize we are already living them. So be persistent in pursuing your dreams, but stay flexible about what they might look like." author="Unknown" %}

@@ -10,7 +10,7 @@
 
   // Keep the original text nodes so switching languages preserves links and markup.
   while ((node = walker.nextNode())) {
-    if (node.parentElement.closest('script, style, pre, code, math, .MathJax, #site-language, [data-language]')) continue;
+    if (node.parentElement.closest('script, style, pre, code, math, .MathJax, #site-language, [data-language], [translate="no"]')) continue;
     var original = node.nodeValue;
     var key = original.trim().replace(/\s+/g, ' ');
     if (Object.prototype.hasOwnProperty.call(translations, key)) {
