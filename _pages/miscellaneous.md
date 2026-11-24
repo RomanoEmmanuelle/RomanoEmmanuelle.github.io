@@ -62,7 +62,7 @@ content_class: miscellaneous-page
 <section class="misc-section" aria-labelledby="triathlon">
 <h2 id="triathlon">Triathlon</h2>
 
-<p class="misc-triathlon">After completing my first full marathon in April 2026, I plan to sign up for an IRONMAN 70.3 triathlon in the near future. Once I have invested in a decent bike, the biggest investment I will need is simply enough time to exercise.</p>
+<p class="misc-triathlon">TBA</p>
 
 </section>
 
