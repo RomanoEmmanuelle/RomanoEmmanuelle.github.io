@@ -59,11 +59,4 @@ content_class: miscellaneous-page
 
 {% include recent-race.html %}
 
-<section class="misc-section" aria-labelledby="triathlon">
-<h2 id="triathlon">Triathlon</h2>
-
-<p class="misc-triathlon">TBA</p>
-
-</section>
-
 {% include page-quote.html text="How we spend our days is, of course, how we spend our lives." author="Annie Dillard" %}
